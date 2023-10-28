@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 15 15:48:16 2022
+# Process ID: 116776
+# Current directory: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/impl_1
+# Command line: vivado -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/impl_1/design_1_wrapper.vdi
+# Journal file: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/impl_1/vivado.jou
+# Running On: bastien-HP-Pavilion-Gaming-Laptop-17-cd1xxx, OS: Linux, CPU Frequency: 3526.337 MHz, CPU Physical cores: 6, Host memory: 16568 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -1,0 +1,79 @@
+fillarray (len)
+begin
+  var t[len] ;
+  var i ;
+
+  i := 0 ;
+  while i < len do
+    t[i] := i ;
+    i := i + 1 ;
+  done
+  return t ;
+end
+
+swaparray (t, len)
+begin
+  var i ;
+  var tmp ;
+
+  i:= 0 ;
+  while i < (len / 2) do
+    print ("Swap: ", i, " and ", len - 1 - i, "\n") ;
+    print (t[i], "<->", t[len - 1 - i], "\n") ;
+    tmp := t[i] ;
+    t[i] := t[len - 1 - i] ;
+    t[len - 1 - i] := tmp ;
+    i := i + 1 ;
+    done
+end
+
+printarray (t, len)
+begin
+  var i ;
+
+  i := 0 ;
+  while i < len do
+     print (t[i], "\n") ;
+     i := i + 1 ;
+  done
+end
+
+
+copyarray (t, len)
+begin
+  var i ;
+  var t2[len] ;
+
+  i := 0 ;
+  while i < len do
+     t2[i] := t[i] ;
+     i := i + 1 ;
+  done
+  return t2 ;
+end
+
+
+main ()
+begin
+  var t ;
+  var len ;
+  var othert ;
+  var i ;
+
+  len := 5 ;
+  t := fillarray (len) ;
+
+  print ("Before swap\n") ;
+  printarray (t, len) ;
+  othert := copyarray (t, len) ;
+  print ("After copy\n") ;
+  printarray (t, len) ;
+  swaparray (t, len) ;
+
+  print ("After swap\n") ;
+  printarray (t, len) ;
+
+  print ("Copied array\n") ;
+  printarray (othert, len) ;
+
+end

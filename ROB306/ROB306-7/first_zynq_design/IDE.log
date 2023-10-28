@@ -1,0 +1,67 @@
+15:50:20 DEBUG : Logs will be stored at '/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/IDE.log'.
+15:50:21 INFO  : Launching XSCT server: xsct -n  -interactive /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/temp_xsdb_launch_script.tcl
+15:50:21 INFO  : Registering command handlers for Vitis TCF services
+15:50:22 INFO  : Platform repository initialization has completed.
+15:50:23 INFO  : XSCT server has started successfully.
+15:50:23 INFO  : plnx-install-location is set to ''
+15:50:23 INFO  : Successfully done setting XSCT server connection channel  
+15:50:23 INFO  : Successfully done query RDI_DATADIR 
+15:50:23 INFO  : Successfully done setting workspace for the tool. 
+15:51:05 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:51:05 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+15:51:06 WARN  : An unexpected exception occurred in the module 'platform project logging'
+15:51:06 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:51:14 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:52:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:52:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8CFA" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8CFA-23727093-0"}' command is executed.
+15:52:05 INFO  : Device configured successfully with "/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/_ide/bitstream/design_1_wrapper.bit"
+15:53:41 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:53:41 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm;xilinx_vck190_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_202210_1/xilinx_vck190_base_202210_1.xpfm;xilinx_vck190_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vck190_base_dfx_202210_1/xilinx_vck190_base_dfx_202210_1.xpfm;xilinx_vmk180_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_vmk180_base_202210_1/xilinx_vmk180_base_202210_1.xpfm;xilinx_zcu102_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_202210_1/xilinx_zcu102_base_202210_1.xpfm;xilinx_zcu102_base_dfx_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu102_base_dfx_202210_1/xilinx_zcu102_base_dfx_202210_1.xpfm;xilinx_zcu104_base_202210_1|/tools/Xilinx/Vitis/2022.1/base_platforms/xilinx_zcu104_base_202210_1/xilinx_zcu104_base_202210_1.xpfm
+15:53:45 INFO  : Checking for BSP changes to sync application flags for project 'LED_test'...
+15:54:11 INFO  : Launch of emulator has been cancelled. Launch configuration will be terminated.
+15:54:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:15 INFO  : Jtag cable 'Digilent Zed 210248AC8CFA' is selected.
+15:54:15 INFO  : 'jtag frequency' command is executed.
+15:54:15 INFO  : Context for 'APU' is selected.
+15:54:15 INFO  : System reset is completed.
+15:54:18 INFO  : 'after 3000' command is executed.
+15:54:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8CFA" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8CFA-23727093-0"}' command is executed.
+15:54:21 INFO  : Device configured successfully with "/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/_ide/bitstream/design_1_wrapper.bit"
+15:54:21 INFO  : Context for 'APU' is selected.
+15:54:21 INFO  : Hardware design and registers information is loaded from '/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:54:21 INFO  : 'configparams force-mem-access 1' command is executed.
+15:54:21 INFO  : Context for 'APU' is selected.
+15:54:21 INFO  : Sourcing of '/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/_ide/psinit/ps7_init.tcl' is done.
+15:54:21 INFO  : 'ps7_init' command is executed.
+15:54:21 INFO  : 'ps7_post_config' command is executed.
+15:54:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:21 INFO  : The application '/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/Debug/LED_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:54:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:54:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AC8CFA" && level==0 && jtag_device_ctx=="jsn-Zed-210248AC8CFA-23727093-0"}
+fpga -file /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test/Debug/LED_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:54:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:21 INFO  : 'con' command is executed.
+15:54:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:54:21 INFO  : Launch script is exported to file '/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/LED_test_system/_ide/scripts/debugger_led_test-default.tcl'
+15:58:12 INFO  : Disconnected from the channel tcfchan#1.

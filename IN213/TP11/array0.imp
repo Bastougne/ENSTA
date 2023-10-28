@@ -1,0 +1,13 @@
+bloups (t)
+begin
+  print (t[3], "\n") ;
+end
+
+
+main ()
+begin
+  var t[5] ;
+
+  t[3] := 30 ;
+  bloups (t) ;
+end

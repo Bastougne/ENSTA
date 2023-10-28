@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 00:53:59 2023
+# Process ID: 13432
+# Current directory: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12816 C:\Users\miche\OneDrive\Desktop\crossbarZynq\axiCrossBar\axiCrossBar.xpr
+# Log file: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/vivado.log
+# Journal file: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/miche/OneDrive/Desktop/crossbarZynq/ip_repo/myipAxi4_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:26 . Memory (MB): peak = 746.160 ; gain = 139.988
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jan 11 00:56:01 2023] Launched impl_1...
+Run output will be captured here: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 203 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1794.004 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1794.004 ; gain = 0.000
+Generating merged BMM file for the design top 'design_1_wrapper'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1794.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  SRLC32E => SRL16E: 17 instances
+
+open_run: Time (s): cpu = 00:00:59 ; elapsed = 00:00:47 . Memory (MB): peak = 1944.227 ; gain = 1100.781
+open_report: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1944.227 ; gain = 0.000
+file copy -force C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.runs/impl_1/design_1_wrapper.sysdef C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk -hwspec C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk -hwspec C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 11 01:11:27 2023...

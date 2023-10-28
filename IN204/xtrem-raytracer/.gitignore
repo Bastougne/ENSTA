@@ -1,0 +1,9 @@
+*.exe
+*.ppm
+*.png
+!cover.png
+main
+xtrem-raytracer
+*.log
+obj
+*.pdf

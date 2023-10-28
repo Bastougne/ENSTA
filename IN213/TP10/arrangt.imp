@@ -1,0 +1,19 @@
+fact (n)
+begin
+if n == 0 then
+  return (1) ;
+  else
+  return (n * fact (n - 1)) ;
+  endif
+end
+
+arrangt (n, k)
+begin
+  return (fact (n) / fact (n - k)) ;
+end
+
+
+main ()
+begin
+  print (arrangt (10, 7), "\n") ;
+end

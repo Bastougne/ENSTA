@@ -1,0 +1,2 @@
+La version 1 est sûre car on effectue une envoi bloquant, donc on sait que myvar sera envoyée avec la valeur quelle avait au moment de l'envoi (0).
+La version 2 ne l'est pas car l'envoi n'est pas bloquant, il est donc possible que myvar soit envoyé avec la valeur 0 ou la valeur 2 sans que l'on puisse le maîtriser.

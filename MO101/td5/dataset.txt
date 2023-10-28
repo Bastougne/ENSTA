@@ -1,0 +1,5 @@
+une phrase,-10,Error. Index out of bounds.
+une phrase,5,h
+une phrase,0,u
+une phrase,9,e
+une phrase,100,Error. Index out of bounds.

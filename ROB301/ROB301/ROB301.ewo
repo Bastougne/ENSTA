@@ -1,0 +1,39 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\Users\\ensta\\Desktop\\ROB301\\ROB301.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\Users\\ensta\\Desktop\\ROB301\\ROB301.etp"="MetricRule" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\Users\\ensta\\Desktop\\ROB301\\ROB301.etp"="HTML" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
+
+"C:\\Users\\ensta\\Desktop\\ROB301\\ROB301.etp"="KCG" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\ensta\\Desktop\\ROB301\\ROB301.etp" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+
+[SCADE\Diff\Tool]
+
+"LastProject1"="" 
+"LastProject2"="" 
+"ModifiedOnly"="0" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="C" 

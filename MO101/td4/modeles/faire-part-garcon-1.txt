@@ -1,0 +1,6 @@
+Je m'appelle <PRENOM>
+Je suis un petit papillon
+Qui a volé jusqu’à la terre
+Ce <DATE>
+Mes antennes mesurent <TAILLE> cm
+Et mes ailes pèsent <POIDS> kg

@@ -1,0 +1,401 @@
+L1
+La Defense Grande Arche
+Pont de Neuilly
+Les Sablons Jardin d'Acclimatation
+Porte Maillot Palais des Congres
+Argentine
+Charles de Gaulle - Etoile
+George V
+Franklin D. Roosevelt
+Champs-Elysees - Clemenceau Grand Palais
+Concorde
+Tuileries
+Palais Royal - Musee du Louvre
+Louvre - Rivoli
+Chatelet
+Hotel de Ville
+Saint-Paul Le Marais
+Bastille
+Gare de Lyon
+Reuilly - Diderot
+Nation
+Porte de Vincennes
+Saint-Mande
+Berault
+Chateau de Vincennes
+.
+
+L2
+Porte Dauphine
+Victor Hugo
+Charles de Gaulle - Etoile
+Ternes
+Courcelles
+Monceau
+Villiers
+Rome
+Place de Clichy
+Blanche
+Pigalle
+AnversFuniculaire de Montmartre
+Barbes - Rochechouart
+La Chapelle
+Stalingrad
+Jaures
+Colonel Fabien
+Belleville
+Couronnes
+Menilmontant
+Pere Lachaise
+Philippe Auguste
+Alexandre Dumas
+Avron
+Nation
+.
+
+L3
+Pont de Levallois - Becon
+Anatole France
+Louise Michel
+Porte de Champerret
+Pereire
+Wagram
+Malesherbes
+Villiers
+Europe
+Saint-Lazare
+Havre - Caumartin
+Opera
+Quatre-Septembre
+Bourse
+Sentier
+Reaumur - Sebastopol
+Arts et Metiers
+Temple
+Republique
+Parmentier
+Rue Saint-Maur
+Pere Lachaise
+Gambetta
+Porte de Bagnolet
+Gallieni
+.
+
+L4
+Porte de Clignancourt
+Simplon
+Marcadet - Poissonniers
+Chateau Rouge
+Barbes - Rochechouart
+Gare du Nord
+Gare de l'Est
+Chateau d'Eau
+Strasbourg - Saint-Denis
+Reaumur - Sebastopol
+Etienne Marcel
+Les Halles
+Chatelet
+Cite
+Saint-Michel
+Odeon
+Saint-Germain-des-Pres
+Saint-Sulpice
+Saint-Placide
+Montparnasse - Bienvenüe
+Vavin
+Raspail
+Denfert-Rochereau
+Mouton-Duvernet
+Alesia
+Porte d'Orleans
+Mairie de Montrouge
+.
+
+L5
+Bobigny - Pablo Picasso
+Bobigny - Pantin - Raymond Queneau
+Eglise de Pantin
+Hoche
+Porte de Pantin
+Ourcq
+Laumiere
+Jaures
+Stalingrad
+Gare du Nord
+Gare de l'Est
+Jacques Bonsergent
+Republique
+Oberkampf
+Richard-Lenoir
+Breguet - Sabin
+Bastille
+Quai de la Rapee
+Gare d'Austerlitz
+Saint-Marcel
+Campo-Formio
+Place d'Italie
+.
+
+L6
+Charles de Gaulle - Etoile
+Kleber
+Boissiere
+Trocadero
+Passy
+Bir-Hakeim
+Dupleix
+La Motte-Picquet - Grenelle
+Cambronne
+Sevres - Lecourbe
+Pasteur
+Montparnasse - Bienvenüe
+Edgar Quinet
+Raspail
+Denfert-Rochereau
+Saint-Jacques
+Glaciere
+Corvisart
+Place d'Italie
+Nationale
+Chevaleret
+Quai de la Gare
+Bercy
+Dugommier
+Daumesnil
+Bel-Air
+Picpus
+Nation
+.
+
+L7
+La Courneuve - 8 Mai 1945
+Fort d'Aubervilliers
+Aubervilliers - Pantin - Quatre Chemins
+Porte de la Villette
+Corentin Cariou
+Crimee
+Riquet
+Stalingrad
+Louis Blanc
+Chateau-Landon
+Gare de l'Est
+Poissonniere
+Cadet
+Le Peletier
+Chaussee d'Antin - La Fayette
+Opera
+Pyramides
+Palais Royal - Musee du Louvre
+Pont Neuf
+Chatelet
+Pont Marie
+Sully - Morland
+Jussieu
+Place Monge
+Censier - Daubenton
+Les Gobelins
+Place d'Italie
+Tolbiac
+Maison Blanche
+.
+
+L7bleue
+Maison Blanche
+Le Kremlin-Bicetre
+Villejuif - Leo Lagrange
+Villejuif - Paul Vaillant-Couturier
+Villejuif - Louis Aragon
+.
+
+L7jaune
+Maison Blanche
+Porte d'Italie
+Porte de Choisy
+Porte d'Ivry
+Pierre et Marie Curie
+Mairie d'Ivry
+.
+
+L8
+Balard
+Lourmel
+Boucicaut
+Felix Faure
+Commerce
+La Motte-Picquet - Grenelle
+Ecole Militaire
+La Tour-Maubourg
+Invalides
+Concorde
+Madeleine
+Opera
+Richelieu - Drouot
+Grands Boulevards
+Bonne-Nouvelle
+Strasbourg - Saint-Denis
+Republique
+Filles du Calvaire
+Saint-Sebastien - Froissart
+Chemin Vert
+Bastille
+Ledru-Rollin
+Faidherbe - Chaligny
+Reuilly - Diderot
+Montgallet
+Daumesnil
+Michel Bizot
+Porte Doree
+Porte de Charenton
+Liberte
+Charenton - Ecoles
+Ecole veterinaire de Maisons-Alfort
+Maisons-Alfort - Stade
+Maisons-Alfort - Les Juilliottes
+Creteil - L'Echat
+Creteil - Universite
+Creteil - Prefecture
+Creteil Pointe du Lac
+.
+
+L9
+Pont de Sevres
+Billancourt
+Marcel Sembat
+Porte de Saint-Cloud
+Exelmans
+Michel-Ange - Molitor
+Michel-Ange - Auteuil
+Jasmin
+Ranelagh
+La Muette
+Rue de la Pompe
+Trocadero
+Iena
+Alma - Marceau
+Franklin D. Roosevelt
+Saint-Philippe du Roule
+Miromesnil
+Saint-Augustin
+Havre - Caumartin
+Chaussee d'Antin - La Fayette
+Richelieu - Drouot
+Grands Boulevards
+Bonne-Nouvelle
+Strasbourg - Saint-Denis
+Republique
+Oberkampf
+Saint-Ambroise
+Voltaire
+Charonne
+Rue des Boulets
+Nation
+Buzenval
+Maraichers
+Porte de Montreuil
+Robespierre
+Croix de Chavaux
+Mairie de Montreuil
+.
+
+L11
+Chatelet
+Hotel de Ville
+Rambuteau
+Arts et Metiers
+Republique
+Goncourt
+Belleville
+Pyrenees
+Jourdain
+Place des Fetes
+Telegraphe
+Porte des Lilas
+Mairie des Lilas
+.
+
+L12
+Aubervilliers Front Populaire
+Porte de la Chapelle
+Marx Dormoy
+Marcadet - Poissonniers
+Jules Joffrin
+Lamarck - Caulaincourt
+Abbesses Funiculaire de Montmartre
+Pigalle
+Saint-Georges
+Notre-Dame-de-Lorette
+Trinite - d'Estienne d'Orves
+Saint-Lazare
+Madeleine
+Concorde
+Assemblee nationale
+Solferino
+Rue du Bac
+Sevres - Babylone
+Rennes
+Notre-Dame-des-Champs
+Montparnasse - Bienvenüe
+Falguiere
+Pasteur
+Volontaires
+Vaugirard
+Convention
+Porte de Versailles
+Corentin Celton
+Mairie d'Issy
+.
+
+L13jaune
+Asnieres - Gennevilliers - Les Courtilles
+Les Agnettes
+Gabriel Peri
+Mairie de Clichy
+Porte de Clichy
+Brochant
+La fourche
+.
+
+L13bleue
+Saint-Denis - Universite
+Basilique de Saint-Denis
+Saint-Denis - Porte de Paris
+Carrefour Pleyel
+Mairie de Saint-Ouen
+Garibaldi
+Porte de Saint-Ouen
+Guy Moquet
+La Fourche
+.
+
+L13
+La Fourche
+Place de Clichy
+Liege
+Saint-Lazare
+Miromesnil
+Champs-Elysees - Clemenceau
+Invalides
+Varenne
+Saint-Francois-Xavier
+Duroc
+Montparnasse - Bienvenue
+Gaite
+Pernety
+Plaisance
+Porte de Vanves
+Malakoff - Plateau de Vanves
+Malakoff - Rue Etienne-Dolet
+Chatillon - Montrouge
+.
+
+L14
+Saint-Lazare
+Madeleine
+Pyramides
+Chatelet
+Gare de Lyon
+Bercy
+Cour Saint-Emilion
+Bibliotheque Francois-Mitterrand
+Olympiades
+.

@@ -1,0 +1,7 @@
+Unable to capture context for thread 7784 in process 4212, can not generate back trace
+Unable to capture context for thread 8180 in process 4212, can not generate back trace
+Unable to capture context for thread 9320 in process 4212, can not generate back trace
+Unable to capture context for thread 9208 in process 4212, can not generate back trace
+Unable to capture context for thread 7604 in process 4212, can not generate back trace
+Exception at PC 0x000007FEFD25A06D
+EXCEPTION_NONCONTINUABLE, hence exiting

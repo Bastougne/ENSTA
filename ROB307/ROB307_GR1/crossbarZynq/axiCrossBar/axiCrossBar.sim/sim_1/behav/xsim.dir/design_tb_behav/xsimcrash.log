@@ -1,0 +1,7 @@
+Unable to capture context for thread 7484 in process 6208, can not generate back trace
+Unable to capture context for thread 7228 in process 6208, can not generate back trace
+Unable to capture context for thread 5228 in process 6208, can not generate back trace
+Unable to capture context for thread 6156 in process 6208, can not generate back trace
+Unable to capture context for thread 10088 in process 6208, can not generate back trace
+Exception at PC 0x000007FEFD5EBDED
+EXCEPTION_NONCONTINUABLE, hence exiting

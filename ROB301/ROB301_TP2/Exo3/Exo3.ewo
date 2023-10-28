@@ -1,0 +1,29 @@
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP2\\Exo3\\Exo3.etp"="KCG" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP2\\Exo3\\Exo3.etp"="MetricRule" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP2\\Exo3\\Exo3.etp"="HTML" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP2\\Exo3\\Exo3.etp" 

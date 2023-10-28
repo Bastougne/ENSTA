@@ -1,0 +1,3 @@
+var menudata={children:[
+{text:"Page principale",url:"index.html"},
+{text:"Pages associées",url:"pages.html"}]}

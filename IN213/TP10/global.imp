@@ -1,0 +1,14 @@
+var x ;
+
+
+f ()
+begin
+  print (x, "\n") ;
+end
+
+
+main ()
+begin
+  x := 100 ;
+  f () ;
+end

@@ -1,0 +1,72 @@
+compile.cmo : \
+    vmBytecode.cmi \
+    impast.cmo \
+    compile.cmi
+compile.cmx : \
+    vmBytecode.cmi \
+    impast.cmx \
+    compile.cmi
+compile.cmi : \
+    vmBytecode.cmi \
+    impast.cmo
+impast.cmo :
+impast.cmx :
+implex.cmo : \
+    impparse.cmi
+implex.cmx : \
+    impparse.cmx
+impparse.cmo : \
+    impast.cmo \
+    impparse.cmi
+impparse.cmx : \
+    impast.cmx \
+    impparse.cmi
+impparse.cmi : \
+    impast.cmo
+mainCompile.cmo : \
+    printByteCode.cmi \
+    impparse.cmi \
+    implex.cmo \
+    impast.cmo \
+    compile.cmi
+mainCompile.cmx : \
+    printByteCode.cmx \
+    impparse.cmx \
+    implex.cmx \
+    impast.cmx \
+    compile.cmx
+mainRun.cmo : \
+    vmExec.cmo \
+    vmBytecode.cmi \
+    printByteCode.cmi \
+    compile.cmi
+mainRun.cmx : \
+    vmExec.cmx \
+    vmBytecode.cmi \
+    printByteCode.cmx \
+    compile.cmx
+mem.cmo : \
+    vmBytecode.cmi \
+    mem.cmi
+mem.cmx : \
+    vmBytecode.cmi \
+    mem.cmi
+mem.cmi : \
+    vmBytecode.cmi
+printByteCode.cmo : \
+    vmBytecode.cmi \
+    printByteCode.cmi
+printByteCode.cmx : \
+    vmBytecode.cmi \
+    printByteCode.cmi
+printByteCode.cmi : \
+    vmBytecode.cmi
+vmBytecode.cmi :
+vmExec.cmo : \
+    vmBytecode.cmi \
+    printByteCode.cmi \
+    mem.cmi
+vmExec.cmx : \
+    vmBytecode.cmi \
+    printByteCode.cmx \
+    mem.cmx

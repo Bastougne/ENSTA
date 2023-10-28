@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="design_tb" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2174748387fs"></ZoomStartTime>
+      <ZoomEndTime time="3054304306fs"></ZoomEndTime>
+      <Cursor1Time time="2750000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="224"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="66" />
+   <wave_markers>
+      <marker time="2410000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/design_tb/s_myReset" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_myReset</obj_property>
+      <obj_property name="ObjectShortName">s_myReset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/s_m00_axi_init_axi_txn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_m00_axi_init_axi_txn</obj_property>
+      <obj_property name="ObjectShortName">s_m00_axi_init_axi_txn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/s_m00_axi_init_axi_txn_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_m00_axi_init_axi_txn_1</obj_property>
+      <obj_property name="ObjectShortName">s_m00_axi_init_axi_txn_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/s_m00_axi_init_axi_txn_2" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_m00_axi_init_axi_txn_2</obj_property>
+      <obj_property name="ObjectShortName">s_m00_axi_init_axi_txn_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/s_myClock" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_myClock</obj_property>
+      <obj_property name="ObjectShortName">s_myClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/clka" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/rsta" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/ena" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/wea" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/dina" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_0/douta" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/clka" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/rsta" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/ena" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/wea" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/addra" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/dina" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_1/douta" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/clka" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">clka</obj_property>
+      <obj_property name="ObjectShortName">clka</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/rsta" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">rsta</obj_property>
+      <obj_property name="ObjectShortName">rsta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/ena" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">ena</obj_property>
+      <obj_property name="ObjectShortName">ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/wea" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">wea[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/addra" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">addra[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/dina" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">dina[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/blk_mem_gen_2/douta" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">douta[31:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/aclk" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/aresetn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_awaddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_awaddr[95:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awaddr[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_awprot" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_awprot[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awprot[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_awvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_awvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_awready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_awready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_awready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_wdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_wdata[95:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wdata[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_wstrb" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_wstrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wstrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_wvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_wvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_wready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_wready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_wready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_bresp" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_bresp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bresp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_bvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_bvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_bready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_bready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_bready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_araddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_araddr[95:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_araddr[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_arprot" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_arprot[8:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arprot[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_arvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_arvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_arready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_arready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_arready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_rdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_rdata[95:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rdata[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_rresp" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_rresp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rresp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_rvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_rvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/s_axi_rready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axi_rready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axi_rready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_awaddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_awaddr[95:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awaddr[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_awprot" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_awprot[8:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awprot[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_awvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_awvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_awready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_awready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_wdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_wdata[95:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wdata[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_wstrb" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_wstrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wstrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_wvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_wvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_wready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_wready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_bresp" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_bresp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bresp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_bvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_bvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_bready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_bready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_araddr" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_araddr[95:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_araddr[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_arprot" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_arprot[8:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arprot[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_arvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_arvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_arready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_arready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arready[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_rdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_rdata[95:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rdata[95:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_rresp" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_rresp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rresp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_rvalid" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_rvalid[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rvalid[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/design_tb/design_1_wrapper_i/design_1_i/axi_crossbar_0/m_axi_rready" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axi_rready[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rready[2:0]</obj_property>
+   </wvobject>
+</wave_config>

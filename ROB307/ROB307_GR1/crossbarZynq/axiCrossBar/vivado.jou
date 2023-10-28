@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 11 00:53:59 2023
+# Process ID: 13432
+# Current directory: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12816 C:\Users\miche\OneDrive\Desktop\crossbarZynq\axiCrossBar\axiCrossBar.xpr
+# Log file: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/vivado.log
+# Journal file: C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+file copy -force C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.runs/impl_1/design_1_wrapper.sysdef C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk -hwspec C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf

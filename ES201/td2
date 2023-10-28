@@ -1,0 +1,76 @@
+exercice 1:
+
+version naïve:
+
+       beq $s5, $zero, Case0
+       addiu t1, $zero, 1
+       beq $s5, $t1, Case1
+       addiu t1, $zero, 2
+       beq $s5, $t1, Case2
+       addiu t1, $zero, 3
+       beq $s5; $t1, Case3
+       j Exit
+Case0: add $s0, $s3, $s4
+       j Exit
+Case1: add $s0, $s1, $s2
+       j Exit
+Case2: sub $s0, $s1, $s2
+       j Exit
+Case3: sub $s0, $s3, $s4
+Exit:
+
+version indépendante du nombre de cas:
+
+t4 = @JumpTab
+JumpTab contient les adresses en mémoire de Case0, Case1, Case2 et Case3
+
+       slt $t3, $s5, $zero
+       bne $t3, $zer0, Exit
+       slti $t3, $s5, 3
+       beq, $t3, $zero, Exit
+       add $t1, $s5, $s5
+       add $t1, $s5, $s5
+       lw $t0, !!!!!
+       jr !!!!!
+
+Case0: add $s0, $s3, $s4
+       j Exit
+Case1: add $s0, $s1, $s2
+       j Exit
+Case2: sub $s0, $s1, $s2
+       j Exit
+Case3: sub $s0, $s3, $s4
+Exit:
+
+
+exercice 2:
+
+       andi $s1, $s1, 0
+       andi $s2, $s2, 0
+       addi $s3, $zero, 500
+       andi $s4, $s4, 0
+       addi $s5, $zero, 1000
+       andi $s6, $s6, 0
+       addi $s7, $zero, 300
+       addi $s0, $zero, 1
+Loop:  add $s1, $s1, $s2
+       add $s1, $s1, $s3
+       add $s1, $s1, $s4
+       addi $s4, $s4, 10
+
+
+exercice 3:
+
+sw $s2, 
+sw $s1
+sw $s0
+add $s2, $a0, $a1
+add $s3, $a2, $a3
+sub $v0, $s2, $s1
+lw $s0
+lw $s1
+lw $s2
+
+1) On a besoin de stocker dans la pile les états de la mémoire avant l'entrée dans la fonction appelée, puis de charger ces états une fois de retour dans la fonction appelante, ce qui prend du temps
+
+2) En plus du temps de stockage, un programme récursif prend de la place sur la pile, car on sauvegarde les registres sur la pile beaucoup de fois avant de la libérer.

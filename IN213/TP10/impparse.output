@@ -1,0 +1,1543 @@
+   0  $accept : %entry% $end
+
+   1  program : EOF
+   2          | toplevel program
+
+   3  toplevel : var_decl
+   4           | fun_def
+
+   5  var_decl : VAR IDENT SEMICOLON
+   6           | VAR IDENT LBRACKET expr RBRACKET SEMICOLON
+
+   7  opt_var_decls :
+   8                | var_decl opt_var_decls
+
+   9  fun_def : IDENT LPAR opt_params RPAR BEGIN opt_var_decls instrs END
+
+  10  opt_params :
+  11             | IDENT params
+
+  12  params :
+  13         | COMMA IDENT params
+
+  14  instrs : instr
+  15         | instr instrs
+
+  16  instr : IF expr THEN instrs ELSE instrs ENDIF
+  17        | WHILE expr DO instrs DONE
+  18        | IDENT COLONEQUAL expr SEMICOLON
+  19        | IDENT LBRACKET expr RBRACKET COLONEQUAL expr SEMICOLON
+  20        | BEGIN instrs END
+  21        | RETURN opt_expr SEMICOLON
+  22        | IDENT LPAR opt_exprs RPAR SEMICOLON
+  23        | PRINT LPAR opt_exprs RPAR SEMICOLON
+
+  24  expr : IDENT LPAR opt_exprs RPAR
+  25       | expr EQUALEQUAL expr
+  26       | expr GREATER expr
+  27       | expr GREATEREQUAL expr
+  28       | expr SMALLER expr
+  29       | expr SMALLEREQUAL expr
+  30       | expr PLUS expr
+  31       | expr MINUS expr
+  32       | expr MULT expr
+  33       | expr DIV expr
+  34       | MINUS expr
+  35       | LPAR expr RPAR
+  36       | atom
+  37       | IDENT LBRACKET expr RBRACKET
+
+  38  opt_expr :
+  39           | expr
+
+  40  opt_exprs :
+  41            | expr exprs
+
+  42  exprs :
+  43        | COMMA expr exprs
+
+  44  atom : INT
+  45       | TRUE
+  46       | FALSE
+  47       | STRING
+  48       | IDENT
+
+  49  %entry% : '\001' program
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . program  (49)
+
+	EOF  shift 3
+	IDENT  shift 4
+	VAR  shift 5
+	.  error
+
+	program  goto 6
+	toplevel  goto 7
+	var_decl  goto 8
+	fun_def  goto 9
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	program : EOF .  (1)
+
+	.  reduce 1
+
+
+state 4
+	fun_def : IDENT . LPAR opt_params RPAR BEGIN opt_var_decls instrs END  (9)
+
+	LPAR  shift 10
+	.  error
+
+
+state 5
+	var_decl : VAR . IDENT SEMICOLON  (5)
+	var_decl : VAR . IDENT LBRACKET expr RBRACKET SEMICOLON  (6)
+
+	IDENT  shift 11
+	.  error
+
+
+state 6
+	%entry% : '\001' program .  (49)
+
+	.  reduce 49
+
+
+state 7
+	program : toplevel . program  (2)
+
+	EOF  shift 3
+	IDENT  shift 4
+	VAR  shift 5
+	.  error
+
+	program  goto 12
+	toplevel  goto 7
+	var_decl  goto 8
+	fun_def  goto 9
+
+
+state 8
+	toplevel : var_decl .  (3)
+
+	.  reduce 3
+
+
+state 9
+	toplevel : fun_def .  (4)
+
+	.  reduce 4
+
+
+state 10
+	fun_def : IDENT LPAR . opt_params RPAR BEGIN opt_var_decls instrs END  (9)
+	opt_params : .  (10)
+
+	IDENT  shift 13
+	RPAR  reduce 10
+
+	opt_params  goto 14
+
+
+state 11
+	var_decl : VAR IDENT . SEMICOLON  (5)
+	var_decl : VAR IDENT . LBRACKET expr RBRACKET SEMICOLON  (6)
+
+	SEMICOLON  shift 15
+	LBRACKET  shift 16
+	.  error
+
+
+state 12
+	program : toplevel program .  (2)
+
+	.  reduce 2
+
+
+state 13
+	opt_params : IDENT . params  (11)
+	params : .  (12)
+
+	COMMA  shift 17
+	RPAR  reduce 12
+
+	params  goto 18
+
+
+state 14
+	fun_def : IDENT LPAR opt_params . RPAR BEGIN opt_var_decls instrs END  (9)
+
+	RPAR  shift 19
+	.  error
+
+
+state 15
+	var_decl : VAR IDENT SEMICOLON .  (5)
+
+	.  reduce 5
+
+
+state 16
+	var_decl : VAR IDENT LBRACKET . expr RBRACKET SEMICOLON  (6)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 27
+	atom  goto 28
+
+
+state 17
+	params : COMMA . IDENT params  (13)
+
+	IDENT  shift 29
+	.  error
+
+
+state 18
+	opt_params : IDENT params .  (11)
+
+	.  reduce 11
+
+
+state 19
+	fun_def : IDENT LPAR opt_params RPAR . BEGIN opt_var_decls instrs END  (9)
+
+	BEGIN  shift 30
+	.  error
+
+
+state 20
+	atom : INT .  (44)
+
+	.  reduce 44
+
+
+state 21
+	expr : IDENT . LPAR opt_exprs RPAR  (24)
+	expr : IDENT . LBRACKET expr RBRACKET  (37)
+	atom : IDENT .  (48)
+
+	LPAR  shift 31
+	LBRACKET  shift 32
+	DO  reduce 48
+	PLUS  reduce 48
+	MINUS  reduce 48
+	MULT  reduce 48
+	DIV  reduce 48
+	EQUALEQUAL  reduce 48
+	GREATER  reduce 48
+	SMALLER  reduce 48
+	GREATEREQUAL  reduce 48
+	SMALLEREQUAL  reduce 48
+	RPAR  reduce 48
+	SEMICOLON  reduce 48
+	COMMA  reduce 48
+	RBRACKET  reduce 48
+	THEN  reduce 48
+
+
+state 22
+	atom : TRUE .  (45)
+
+	.  reduce 45
+
+
+state 23
+	atom : FALSE .  (46)
+
+	.  reduce 46
+
+
+state 24
+	atom : STRING .  (47)
+
+	.  reduce 47
+
+
+state 25
+	expr : MINUS . expr  (34)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 33
+	atom  goto 28
+
+
+state 26
+	expr : LPAR . expr RPAR  (35)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 34
+	atom  goto 28
+
+
+state 27
+	var_decl : VAR IDENT LBRACKET expr . RBRACKET SEMICOLON  (6)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	RBRACKET  shift 44
+	.  error
+
+
+state 28
+	expr : atom .  (36)
+
+	.  reduce 36
+
+
+state 29
+	params : COMMA IDENT . params  (13)
+	params : .  (12)
+
+	COMMA  shift 17
+	RPAR  reduce 12
+
+	params  goto 45
+
+
+state 30
+	fun_def : IDENT LPAR opt_params RPAR BEGIN . opt_var_decls instrs END  (9)
+	opt_var_decls : .  (7)
+
+	VAR  shift 5
+	IDENT  reduce 7
+	WHILE  reduce 7
+	BEGIN  reduce 7
+	RETURN  reduce 7
+	IF  reduce 7
+	PRINT  reduce 7
+
+	var_decl  goto 46
+	opt_var_decls  goto 47
+
+
+state 31
+	expr : IDENT LPAR . opt_exprs RPAR  (24)
+	opt_exprs : .  (40)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	RPAR  reduce 40
+
+	expr  goto 48
+	opt_exprs  goto 49
+	atom  goto 28
+
+
+state 32
+	expr : IDENT LBRACKET . expr RBRACKET  (37)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 50
+	atom  goto 28
+
+
+state 33
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	expr : MINUS expr .  (34)
+
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 34
+	PLUS  reduce 34
+	MINUS  reduce 34
+	EQUALEQUAL  reduce 34
+	GREATER  reduce 34
+	SMALLER  reduce 34
+	GREATEREQUAL  reduce 34
+	SMALLEREQUAL  reduce 34
+	RPAR  reduce 34
+	SEMICOLON  reduce 34
+	COMMA  reduce 34
+	RBRACKET  reduce 34
+	THEN  reduce 34
+
+
+state 34
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	expr : LPAR expr . RPAR  (35)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	RPAR  shift 51
+	.  error
+
+
+state 35
+	expr : expr PLUS . expr  (30)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 52
+	atom  goto 28
+
+
+state 36
+	expr : expr MINUS . expr  (31)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 53
+	atom  goto 28
+
+
+state 37
+	expr : expr MULT . expr  (32)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 54
+	atom  goto 28
+
+
+state 38
+	expr : expr DIV . expr  (33)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 55
+	atom  goto 28
+
+
+state 39
+	expr : expr EQUALEQUAL . expr  (25)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 56
+	atom  goto 28
+
+
+state 40
+	expr : expr GREATER . expr  (26)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 57
+	atom  goto 28
+
+
+state 41
+	expr : expr SMALLER . expr  (28)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 58
+	atom  goto 28
+
+
+state 42
+	expr : expr GREATEREQUAL . expr  (27)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 59
+	atom  goto 28
+
+
+state 43
+	expr : expr SMALLEREQUAL . expr  (29)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 60
+	atom  goto 28
+
+
+state 44
+	var_decl : VAR IDENT LBRACKET expr RBRACKET . SEMICOLON  (6)
+
+	SEMICOLON  shift 61
+	.  error
+
+
+state 45
+	params : COMMA IDENT params .  (13)
+
+	.  reduce 13
+
+
+state 46
+	opt_var_decls : var_decl . opt_var_decls  (8)
+	opt_var_decls : .  (7)
+
+	VAR  shift 5
+	IDENT  reduce 7
+	WHILE  reduce 7
+	BEGIN  reduce 7
+	RETURN  reduce 7
+	IF  reduce 7
+	PRINT  reduce 7
+
+	var_decl  goto 46
+	opt_var_decls  goto 62
+
+
+state 47
+	fun_def : IDENT LPAR opt_params RPAR BEGIN opt_var_decls . instrs END  (9)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	.  error
+
+	instrs  goto 69
+	instr  goto 70
+
+
+state 48
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	opt_exprs : expr . exprs  (41)
+	exprs : .  (42)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	COMMA  shift 71
+	RPAR  reduce 42
+
+	exprs  goto 72
+
+
+state 49
+	expr : IDENT LPAR opt_exprs . RPAR  (24)
+
+	RPAR  shift 73
+	.  error
+
+
+state 50
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	expr : IDENT LBRACKET expr . RBRACKET  (37)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	RBRACKET  shift 74
+	.  error
+
+
+state 51
+	expr : LPAR expr RPAR .  (35)
+
+	.  reduce 35
+
+
+state 52
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr PLUS expr .  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 30
+	PLUS  reduce 30
+	MINUS  reduce 30
+	EQUALEQUAL  reduce 30
+	GREATER  reduce 30
+	SMALLER  reduce 30
+	GREATEREQUAL  reduce 30
+	SMALLEREQUAL  reduce 30
+	RPAR  reduce 30
+	SEMICOLON  reduce 30
+	COMMA  reduce 30
+	RBRACKET  reduce 30
+	THEN  reduce 30
+
+
+state 53
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr MINUS expr .  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 31
+	PLUS  reduce 31
+	MINUS  reduce 31
+	EQUALEQUAL  reduce 31
+	GREATER  reduce 31
+	SMALLER  reduce 31
+	GREATEREQUAL  reduce 31
+	SMALLEREQUAL  reduce 31
+	RPAR  reduce 31
+	SEMICOLON  reduce 31
+	COMMA  reduce 31
+	RBRACKET  reduce 31
+	THEN  reduce 31
+
+
+state 54
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr MULT expr .  (32)
+	expr : expr . DIV expr  (33)
+
+	.  reduce 32
+
+
+state 55
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	expr : expr DIV expr .  (33)
+
+	.  reduce 33
+
+
+state 56
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr EQUALEQUAL expr .  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 25
+	EQUALEQUAL  reduce 25
+	GREATER  reduce 25
+	SMALLER  reduce 25
+	GREATEREQUAL  reduce 25
+	SMALLEREQUAL  reduce 25
+	RPAR  reduce 25
+	SEMICOLON  reduce 25
+	COMMA  reduce 25
+	RBRACKET  reduce 25
+	THEN  reduce 25
+
+
+state 57
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr GREATER expr .  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 26
+	EQUALEQUAL  reduce 26
+	GREATER  reduce 26
+	SMALLER  reduce 26
+	GREATEREQUAL  reduce 26
+	SMALLEREQUAL  reduce 26
+	RPAR  reduce 26
+	SEMICOLON  reduce 26
+	COMMA  reduce 26
+	RBRACKET  reduce 26
+	THEN  reduce 26
+
+
+state 58
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr SMALLER expr .  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 28
+	EQUALEQUAL  reduce 28
+	GREATER  reduce 28
+	SMALLER  reduce 28
+	GREATEREQUAL  reduce 28
+	SMALLEREQUAL  reduce 28
+	RPAR  reduce 28
+	SEMICOLON  reduce 28
+	COMMA  reduce 28
+	RBRACKET  reduce 28
+	THEN  reduce 28
+
+
+state 59
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr GREATEREQUAL expr .  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 27
+	EQUALEQUAL  reduce 27
+	GREATER  reduce 27
+	SMALLER  reduce 27
+	GREATEREQUAL  reduce 27
+	SMALLEREQUAL  reduce 27
+	RPAR  reduce 27
+	SEMICOLON  reduce 27
+	COMMA  reduce 27
+	RBRACKET  reduce 27
+	THEN  reduce 27
+
+
+state 60
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr SMALLEREQUAL expr .  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	DO  reduce 29
+	EQUALEQUAL  reduce 29
+	GREATER  reduce 29
+	SMALLER  reduce 29
+	GREATEREQUAL  reduce 29
+	SMALLEREQUAL  reduce 29
+	RPAR  reduce 29
+	SEMICOLON  reduce 29
+	COMMA  reduce 29
+	RBRACKET  reduce 29
+	THEN  reduce 29
+
+
+state 61
+	var_decl : VAR IDENT LBRACKET expr RBRACKET SEMICOLON .  (6)
+
+	.  reduce 6
+
+
+state 62
+	opt_var_decls : var_decl opt_var_decls .  (8)
+
+	.  reduce 8
+
+
+state 63
+	instr : IDENT . COLONEQUAL expr SEMICOLON  (18)
+	instr : IDENT . LBRACKET expr RBRACKET COLONEQUAL expr SEMICOLON  (19)
+	instr : IDENT . LPAR opt_exprs RPAR SEMICOLON  (22)
+
+	COLONEQUAL  shift 75
+	LPAR  shift 76
+	LBRACKET  shift 77
+	.  error
+
+
+state 64
+	instr : WHILE . expr DO instrs DONE  (17)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 78
+	atom  goto 28
+
+
+state 65
+	instr : BEGIN . instrs END  (20)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	.  error
+
+	instrs  goto 79
+	instr  goto 70
+
+
+state 66
+	instr : RETURN . opt_expr SEMICOLON  (21)
+	opt_expr : .  (38)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	SEMICOLON  reduce 38
+
+	expr  goto 80
+	opt_expr  goto 81
+	atom  goto 28
+
+
+state 67
+	instr : IF . expr THEN instrs ELSE instrs ENDIF  (16)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 82
+	atom  goto 28
+
+
+state 68
+	instr : PRINT . LPAR opt_exprs RPAR SEMICOLON  (23)
+
+	LPAR  shift 83
+	.  error
+
+
+state 69
+	fun_def : IDENT LPAR opt_params RPAR BEGIN opt_var_decls instrs . END  (9)
+
+	END  shift 84
+	.  error
+
+
+state 70
+	instrs : instr .  (14)
+	instrs : instr . instrs  (15)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	DONE  reduce 14
+	END  reduce 14
+	ELSE  reduce 14
+	ENDIF  reduce 14
+
+	instrs  goto 85
+	instr  goto 70
+
+
+state 71
+	exprs : COMMA . expr exprs  (43)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 86
+	atom  goto 28
+
+
+state 72
+	opt_exprs : expr exprs .  (41)
+
+	.  reduce 41
+
+
+state 73
+	expr : IDENT LPAR opt_exprs RPAR .  (24)
+
+	.  reduce 24
+
+
+state 74
+	expr : IDENT LBRACKET expr RBRACKET .  (37)
+
+	.  reduce 37
+
+
+state 75
+	instr : IDENT COLONEQUAL . expr SEMICOLON  (18)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 87
+	atom  goto 28
+
+
+state 76
+	instr : IDENT LPAR . opt_exprs RPAR SEMICOLON  (22)
+	opt_exprs : .  (40)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	RPAR  reduce 40
+
+	expr  goto 48
+	opt_exprs  goto 88
+	atom  goto 28
+
+
+state 77
+	instr : IDENT LBRACKET . expr RBRACKET COLONEQUAL expr SEMICOLON  (19)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 89
+	atom  goto 28
+
+
+state 78
+	instr : WHILE expr . DO instrs DONE  (17)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	DO  shift 90
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	.  error
+
+
+state 79
+	instr : BEGIN instrs . END  (20)
+
+	END  shift 91
+	.  error
+
+
+state 80
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	opt_expr : expr .  (39)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	SEMICOLON  reduce 39
+
+
+state 81
+	instr : RETURN opt_expr . SEMICOLON  (21)
+
+	SEMICOLON  shift 92
+	.  error
+
+
+state 82
+	instr : IF expr . THEN instrs ELSE instrs ENDIF  (16)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	THEN  shift 93
+	.  error
+
+
+state 83
+	instr : PRINT LPAR . opt_exprs RPAR SEMICOLON  (23)
+	opt_exprs : .  (40)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	RPAR  reduce 40
+
+	expr  goto 48
+	opt_exprs  goto 94
+	atom  goto 28
+
+
+state 84
+	fun_def : IDENT LPAR opt_params RPAR BEGIN opt_var_decls instrs END .  (9)
+
+	.  reduce 9
+
+
+state 85
+	instrs : instr instrs .  (15)
+
+	.  reduce 15
+
+
+state 86
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+	exprs : COMMA expr . exprs  (43)
+	exprs : .  (42)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	COMMA  shift 71
+	RPAR  reduce 42
+
+	exprs  goto 95
+
+
+state 87
+	instr : IDENT COLONEQUAL expr . SEMICOLON  (18)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	SEMICOLON  shift 96
+	.  error
+
+
+state 88
+	instr : IDENT LPAR opt_exprs . RPAR SEMICOLON  (22)
+
+	RPAR  shift 97
+	.  error
+
+
+state 89
+	instr : IDENT LBRACKET expr . RBRACKET COLONEQUAL expr SEMICOLON  (19)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	RBRACKET  shift 98
+	.  error
+
+
+state 90
+	instr : WHILE expr DO . instrs DONE  (17)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	.  error
+
+	instrs  goto 99
+	instr  goto 70
+
+
+state 91
+	instr : BEGIN instrs END .  (20)
+
+	.  reduce 20
+
+
+state 92
+	instr : RETURN opt_expr SEMICOLON .  (21)
+
+	.  reduce 21
+
+
+state 93
+	instr : IF expr THEN . instrs ELSE instrs ENDIF  (16)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	.  error
+
+	instrs  goto 100
+	instr  goto 70
+
+
+state 94
+	instr : PRINT LPAR opt_exprs . RPAR SEMICOLON  (23)
+
+	RPAR  shift 101
+	.  error
+
+
+state 95
+	exprs : COMMA expr exprs .  (43)
+
+	.  reduce 43
+
+
+state 96
+	instr : IDENT COLONEQUAL expr SEMICOLON .  (18)
+
+	.  reduce 18
+
+
+state 97
+	instr : IDENT LPAR opt_exprs RPAR . SEMICOLON  (22)
+
+	SEMICOLON  shift 102
+	.  error
+
+
+state 98
+	instr : IDENT LBRACKET expr RBRACKET . COLONEQUAL expr SEMICOLON  (19)
+
+	COLONEQUAL  shift 103
+	.  error
+
+
+state 99
+	instr : WHILE expr DO instrs . DONE  (17)
+
+	DONE  shift 104
+	.  error
+
+
+state 100
+	instr : IF expr THEN instrs . ELSE instrs ENDIF  (16)
+
+	ELSE  shift 105
+	.  error
+
+
+state 101
+	instr : PRINT LPAR opt_exprs RPAR . SEMICOLON  (23)
+
+	SEMICOLON  shift 106
+	.  error
+
+
+state 102
+	instr : IDENT LPAR opt_exprs RPAR SEMICOLON .  (22)
+
+	.  reduce 22
+
+
+state 103
+	instr : IDENT LBRACKET expr RBRACKET COLONEQUAL . expr SEMICOLON  (19)
+
+	INT  shift 20
+	IDENT  shift 21
+	TRUE  shift 22
+	FALSE  shift 23
+	STRING  shift 24
+	MINUS  shift 25
+	LPAR  shift 26
+	.  error
+
+	expr  goto 107
+	atom  goto 28
+
+
+state 104
+	instr : WHILE expr DO instrs DONE .  (17)
+
+	.  reduce 17
+
+
+state 105
+	instr : IF expr THEN instrs ELSE . instrs ENDIF  (16)
+
+	IDENT  shift 63
+	WHILE  shift 64
+	BEGIN  shift 65
+	RETURN  shift 66
+	IF  shift 67
+	PRINT  shift 68
+	.  error
+
+	instrs  goto 108
+	instr  goto 70
+
+
+state 106
+	instr : PRINT LPAR opt_exprs RPAR SEMICOLON .  (23)
+
+	.  reduce 23
+
+
+state 107
+	instr : IDENT LBRACKET expr RBRACKET COLONEQUAL expr . SEMICOLON  (19)
+	expr : expr . EQUALEQUAL expr  (25)
+	expr : expr . GREATER expr  (26)
+	expr : expr . GREATEREQUAL expr  (27)
+	expr : expr . SMALLER expr  (28)
+	expr : expr . SMALLEREQUAL expr  (29)
+	expr : expr . PLUS expr  (30)
+	expr : expr . MINUS expr  (31)
+	expr : expr . MULT expr  (32)
+	expr : expr . DIV expr  (33)
+
+	PLUS  shift 35
+	MINUS  shift 36
+	MULT  shift 37
+	DIV  shift 38
+	EQUALEQUAL  shift 39
+	GREATER  shift 40
+	SMALLER  shift 41
+	GREATEREQUAL  shift 42
+	SMALLEREQUAL  shift 43
+	SEMICOLON  shift 109
+	.  error
+
+
+state 108
+	instr : IF expr THEN instrs ELSE instrs . ENDIF  (16)
+
+	ENDIF  shift 110
+	.  error
+
+
+state 109
+	instr : IDENT LBRACKET expr RBRACKET COLONEQUAL expr SEMICOLON .  (19)
+
+	.  reduce 19
+
+
+state 110
+	instr : IF expr THEN instrs ELSE instrs ENDIF .  (16)
+
+	.  reduce 16
+
+
+37 terminals, 16 nonterminals
+50 grammar rules, 111 states

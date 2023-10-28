@@ -1,0 +1,8 @@
+7
+Gru Bob Kevin Stuart Agnes Margo Edith
+Gru Kevin 20
+Agnes Gru 10
+Edith Bob 15
+Bob Stuart 30
+Margo Stuart 10
+Kevin Edith 15

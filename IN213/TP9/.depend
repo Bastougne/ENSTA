@@ -1,0 +1,61 @@
+compile.cmo : \
+    vmBytecode.cmi \
+    pcfast.cmo \
+    compile.cmi
+compile.cmx : \
+    vmBytecode.cmi \
+    pcfast.cmx \
+    compile.cmi
+compile.cmi : \
+    vmBytecode.cmi \
+    pcfast.cmo
+mainCompile.cmo : \
+    vmBytecode.cmi \
+    printByteCode.cmi \
+    pcfparse.cmi \
+    pcflex.cmo \
+    compile.cmi
+mainCompile.cmx : \
+    vmBytecode.cmi \
+    printByteCode.cmx \
+    pcfparse.cmx \
+    pcflex.cmx \
+    compile.cmx
+mainRun.cmo : \
+    vmExec.cmi \
+    vmBytecode.cmi \
+    printByteCode.cmi
+mainRun.cmx : \
+    vmExec.cmx \
+    vmBytecode.cmi \
+    printByteCode.cmx
+pcfast.cmo :
+pcfast.cmx :
+pcflex.cmo : \
+    pcfparse.cmi
+pcflex.cmx : \
+    pcfparse.cmx
+pcfparse.cmo : \
+    pcfast.cmo \
+    pcfparse.cmi
+pcfparse.cmx : \
+    pcfast.cmx \
+    pcfparse.cmi
+pcfparse.cmi : \
+    pcfast.cmo
+printByteCode.cmo : \
+    vmBytecode.cmi \
+    printByteCode.cmi
+printByteCode.cmx : \
+    vmBytecode.cmi \
+    printByteCode.cmi
+vmExec.cmo : \
+    vmBytecode.cmi \
+    printByteCode.cmi \
+    vmExec.cmi
+vmExec.cmx : \
+    vmBytecode.cmi \
+    printByteCode.cmx \
+    vmExec.cmi
+vmExec.cmi : \
+    vmBytecode.cmi

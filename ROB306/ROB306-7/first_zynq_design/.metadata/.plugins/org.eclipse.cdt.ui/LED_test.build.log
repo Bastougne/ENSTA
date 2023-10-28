@@ -1,0 +1,25 @@
+15:53:47 **** Build of configuration Debug for project LED_test ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/LED_test_tut_1C.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LED_test_tut_1C.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/LED_test_tut_1C.d" -MT"src/LED_test_tut_1C.o" -o "src/LED_test_tut_1C.o" "../src/LED_test_tut_1C.c"
+Finished building: ../src/LED_test_tut_1C.c
+ 
+Building target: LED_test.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "LED_test.elf" ./src/LED_test_tut_1C.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: LED_test.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size LED_test.elf  |tee "LED_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23109	   1160	  22600	  46869	   b715	LED_test.elf
+Finished building: LED_test.elf.size
+ 
+
+15:53:47 Build Finished (took 265ms)
+

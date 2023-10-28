@@ -1,0 +1,14 @@
+var NAVTREE =
+[
+  [ "Programmation multitâches & OS temps réel", "index.html", [
+    [ "Travaux dirigés", "index.html", "index" ]
+  ] ]
+];
+
+var NAVTREEINDEX =
+[
+"index.html"
+];
+
+var SYNCONMSG = 'cliquez pour désactiver la synchronisation du panel';
+var SYNCOFFMSG = 'cliquez pour activer la synchronisation du panel';

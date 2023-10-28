@@ -1,0 +1,25 @@
+Interblocage :
+
+if ( rank == 0 ) {
+	MPI_Send( &var1, 1, MPI_INT, 1, 0, globComm );
+	MPI_Recv( &var2, 1, MPI_INT, 1, 0, globComm, &status );
+
+} else if ( rank == 1 ) {
+	MPI_Send( &var1, 1, MPI_INT, 0, 0, globComm );
+	MPI_Recv( &var2, 1, MPI_INT, 0, 0, globComm, &status );
+}
+
+Les 2 envois attendent une reception qui n'arrivera jamais, peu importe l'ordre dans lequel les envois sont fait.
+
+Sans interblocage :
+
+if ( rank == 0 ) {
+	MPI_Recv( &var1, 1, MPI_INT, 1, 0, globComm, &status );
+	MPI_Send( &var2, 1, MPI_INT, 1, 0, globComm );
+
+} else if ( rank == 1 ) {
+	MPI_Send( &var1, 1, MPI_INT, 0, 0, globComm );
+	MPI_Recv( &var2, 1, MPI_INT, 0, 0, globComm, &status );
+}
+
+Le processus 1 envoi var1 et attend la reception de var1 par le processus 0, puis c'est l'inverse avec le processus 0.

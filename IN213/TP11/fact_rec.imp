@@ -1,0 +1,13 @@
+fact (n)
+begin
+if n == 0 then
+  return (1) ;
+  else
+  return (n * fact (n - 1)) ;
+  endif
+end
+
+main ()
+begin
+  print (fact (5), "\n") ;
+end

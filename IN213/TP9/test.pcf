@@ -1,0 +1,6 @@
+/* Résultat : 9. */
+let id x = x in
+let double f x = f (f x) in
+let plusdeux y = y + 2 in
+double plusdeux (id 5) ;;
+

@@ -1,0 +1,6 @@
+3
+Alice Bob Charlie
+Charlie Alice 10
+Alice Bob 15
+Charlie Bob 7
+Bob Charlie 5

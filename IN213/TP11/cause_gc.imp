@@ -1,0 +1,30 @@
+f (i)
+begin
+  var t[i] ;
+  var j ;
+
+  j := 0 ;
+  while j < i do
+    t[j] := i * 10 ;
+    j := j + 1 ;
+  done
+  j := 0 ;
+  while j < i do
+    print (t[j], " ") ;
+    j := j + 1 ;
+  done
+  print ("\n") ;
+end
+
+
+main ()
+begin
+  var i ;
+
+  i := 0 ;
+  while i < 50 do
+    f (i) ;
+    i := i + 1 ;
+  done
+end
+

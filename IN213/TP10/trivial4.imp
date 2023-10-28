@@ -1,0 +1,14 @@
+double (n)
+begin
+  return (n * 2) ;
+end
+
+plus1 (m)
+begin
+  return (1 + double (m)) ;
+end
+
+main ()
+begin
+  print (plus1 (10), "\n") ;
+end

@@ -1,0 +1,29 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP3\\Exo1\\Exo1.etp"="Simulation" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Metrics and Rules Checker]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP3\\Exo1\\Exo1.etp"="MetricRule" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP3\\Exo1\\Exo1.etp"="HTML" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\hbast\\OneDrive\\Bureau\\ROB301_TP3\\Exo1\\Exo1.etp" 
+
+[SCADE\Editor\Shortcut]
+
+"groupNb"="0" 
+
+[SCADE\Editor\Tool]
+
+"UsePolyline"="false" 
+"TransitionKind"="strong" 
+
+[SCADE\Generator\Tool]
+
+"PragmaTarget"="" 

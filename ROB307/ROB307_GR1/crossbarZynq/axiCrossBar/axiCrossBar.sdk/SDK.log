@@ -1,0 +1,2309 @@
+16:07:49 INFO  : Registering command handlers for SDK TCF services
+16:07:50 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\leprovo\workspace\crossbar\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+16:07:52 INFO  : XSCT server has started successfully.
+16:07:52 INFO  : Successfully done setting XSCT server connection channel  
+16:07:52 INFO  : Successfully done setting SDK workspace  
+16:07:52 INFO  : Processing command line option -hwspec C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+16:12:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248780560" && level==0} -index 1' command is executed.
+16:12:26 INFO  : FPGA configured successfully with bitstream "C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+16:12:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248780560" && level==0} -index 1' command is executed.
+16:12:40 INFO  : 'fpga -state' command is executed.
+16:12:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:40 INFO  : Jtag cable 'Digilent Zed 210248780560' is selected.
+16:12:40 INFO  : 'jtag frequency' command is executed.
+16:12:40 INFO  : Sourcing of 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:12:40 INFO  : Context for 'APU' is selected.
+16:12:40 INFO  : Hardware design information is loaded from 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:12:40 INFO  : 'configparams force-mem-access 1' command is executed.
+16:12:40 INFO  : Context for 'APU' is selected.
+16:12:40 INFO  : 'stop' command is executed.
+16:12:41 INFO  : 'ps7_init' command is executed.
+16:12:41 INFO  : 'ps7_post_config' command is executed.
+16:12:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:12:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:41 INFO  : The application 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/bid/Debug/bid.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:41 INFO  : 'configparams force-mem-access 0' command is executed.
+16:12:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+loadhw -hw C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+dow C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/bid/Debug/bid.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:12:41 INFO  : Memory regions updated for context APU
+16:12:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:41 INFO  : 'con' command is executed.
+16:12:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+con
+----------------End of Script----------------
+
+16:12:41 INFO  : Launch script is exported to file 'C:\Users\leprovo\workspace\crossbar\axiCrossBar\axiCrossBar.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_bid.elf_on_local.tcl'
+16:13:27 INFO  : Disconnected from the channel tcfchan#1.
+16:13:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248780560" && level==0} -index 1' command is executed.
+16:13:28 INFO  : 'fpga -state' command is executed.
+16:13:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:13:28 INFO  : Jtag cable 'Digilent Zed 210248780560' is selected.
+16:13:28 INFO  : 'jtag frequency' command is executed.
+16:13:28 INFO  : Sourcing of 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+16:13:28 INFO  : Context for 'APU' is selected.
+16:13:30 INFO  : Hardware design information is loaded from 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+16:13:30 INFO  : 'configparams force-mem-access 1' command is executed.
+16:13:30 INFO  : Context for 'APU' is selected.
+16:13:30 INFO  : 'stop' command is executed.
+16:13:31 INFO  : 'ps7_init' command is executed.
+16:13:31 INFO  : 'ps7_post_config' command is executed.
+16:13:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+16:13:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:31 INFO  : The application 'C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/bid/Debug/bid.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:13:31 INFO  : 'configparams force-mem-access 0' command is executed.
+16:13:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+loadhw -hw C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+dow C:/Users/leprovo/workspace/crossbar/axiCrossBar/axiCrossBar.sdk/bid/Debug/bid.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:13:31 INFO  : Memory regions updated for context APU
+16:13:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:13:31 INFO  : 'con' command is executed.
+16:13:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248780560"} -index 0
+con
+----------------End of Script----------------
+
+16:13:31 INFO  : Launch script is exported to file 'C:\Users\leprovo\workspace\crossbar\axiCrossBar\axiCrossBar.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_bid.elf_on_local.tcl'
+16:40:25 INFO  : Disconnected from the channel tcfchan#2.
+09:00:39 INFO  : Registering command handlers for SDK TCF services
+09:00:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\leprovo\workspace\coursENSTA\tp2019_2020\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+09:00:42 INFO  : XSCT server has started successfully.
+09:00:42 INFO  : Successfully done setting XSCT server connection channel  
+09:00:42 INFO  : Successfully done setting SDK workspace  
+09:00:42 INFO  : Processing command line option -hwspec C:/Users/leprovo/workspace/coursENSTA/tp2019_2020/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+20:03:40 INFO  : Registering command handlers for SDK TCF services
+20:03:41 INFO  : Launching XSCT server: xsct.bat -interactive D:\HANIN\ROB307\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+20:03:44 INFO  : XSCT server has started successfully.
+20:03:48 INFO  : Successfully done setting XSCT server connection channel  
+20:03:48 INFO  : Processing command line option -hwspec D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+20:03:48 INFO  : Successfully done setting SDK workspace  
+18:41:13 INFO  : Launching XSCT server: xsct.bat -interactive D:\HANIN\ROB307\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+18:41:16 INFO  : XSCT server has started successfully.
+18:41:24 INFO  : Successfully done setting XSCT server connection channel  
+18:41:24 INFO  : Successfully done setting SDK workspace  
+18:41:26 INFO  : Registering command handlers for SDK TCF services
+18:41:27 INFO  : Processing command line option -hwspec D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+18:41:27 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+18:41:27 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1606242835151,  Project:1606161715229
+18:41:27 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+18:41:27 INFO  : Copied contents of D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+18:41:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:41:32 INFO  : Clearing existing target manager status.
+18:41:32 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:41:32 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+18:48:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:48:31 INFO  : 'fpga -state' command is executed.
+18:49:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:49:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:49:21 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+18:49:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+18:49:33 INFO  : 'fpga -state' command is executed.
+18:49:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:49:33 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+18:49:33 INFO  : 'jtag frequency' command is executed.
+18:49:33 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:49:33 INFO  : Context for 'APU' is selected.
+18:49:33 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+18:49:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:49:33 INFO  : Context for 'APU' is selected.
+18:49:33 INFO  : 'stop' command is executed.
+18:49:34 INFO  : 'ps7_init' command is executed.
+18:49:34 INFO  : 'ps7_post_config' command is executed.
+18:49:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:34 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:49:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:34 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/test/Release/test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:49:34 INFO  : 'configparams force-mem-access 0' command is executed.
+18:49:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/test/Release/test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:49:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:34 INFO  : 'con' command is executed.
+18:49:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+18:49:34 INFO  : Disconnected from the channel tcfchan#1.
+20:04:17 INFO  : Registering command handlers for SDK TCF services
+20:04:18 INFO  : Launching XSCT server: xsct.bat -interactive D:\HANIN\ROB307\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+20:04:20 INFO  : XSCT server has started successfully.
+20:04:20 INFO  : Processing command line option -hwspec D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+20:04:20 INFO  : Successfully done setting XSCT server connection channel  
+20:04:20 INFO  : Successfully done setting SDK workspace  
+20:04:20 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+19:54:53 INFO  : Registering command handlers for SDK TCF services
+19:54:57 INFO  : Launching XSCT server: xsct.bat -interactive D:\HANIN\ROB307\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+19:55:11 INFO  : XSCT server has started successfully.
+19:55:22 INFO  : Processing command line option -hwspec D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+19:55:22 INFO  : Successfully done setting XSCT server connection channel  
+19:55:22 INFO  : Successfully done setting SDK workspace  
+19:55:22 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+20:00:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:00:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:00:37 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:00:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:00:59 INFO  : 'fpga -state' command is executed.
+20:00:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:01:00 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:01:00 INFO  : 'jtag frequency' command is executed.
+20:01:00 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:01:00 INFO  : Context for 'APU' is selected.
+20:01:00 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:01:00 INFO  : 'configparams force-mem-access 1' command is executed.
+20:01:00 INFO  : Context for 'APU' is selected.
+20:01:00 INFO  : 'stop' command is executed.
+20:01:00 INFO  : 'ps7_init' command is executed.
+20:01:00 INFO  : 'ps7_post_config' command is executed.
+20:01:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:01:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:01:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:01:01 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Debug/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:01:01 INFO  : 'configparams force-mem-access 0' command is executed.
+20:01:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Debug/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:01:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:01:01 INFO  : 'con' command is executed.
+20:01:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:01:01 INFO  : Disconnected from the channel tcfchan#1.
+20:22:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:22:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:22:13 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:26:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:26:02 INFO  : 'fpga -state' command is executed.
+20:26:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:26:03 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:26:03 INFO  : 'jtag frequency' command is executed.
+20:26:03 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:26:03 INFO  : Context for 'APU' is selected.
+20:26:03 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:26:03 INFO  : 'configparams force-mem-access 1' command is executed.
+20:26:03 INFO  : Context for 'APU' is selected.
+20:26:03 INFO  : 'stop' command is executed.
+20:26:03 INFO  : 'ps7_init' command is executed.
+20:26:03 INFO  : 'ps7_post_config' command is executed.
+20:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:26:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:26:03 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:26:03 INFO  : 'configparams force-mem-access 0' command is executed.
+20:26:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:26:03 INFO  : 'con' command is executed.
+20:26:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:26:03 INFO  : Disconnected from the channel tcfchan#2.
+20:27:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:27:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:27:19 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:27:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:27:34 INFO  : 'fpga -state' command is executed.
+20:27:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:27:34 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:27:34 INFO  : 'jtag frequency' command is executed.
+20:27:34 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:27:34 INFO  : Context for 'APU' is selected.
+20:27:34 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:27:34 INFO  : 'configparams force-mem-access 1' command is executed.
+20:27:34 INFO  : Context for 'APU' is selected.
+20:27:34 INFO  : 'stop' command is executed.
+20:27:35 INFO  : 'ps7_init' command is executed.
+20:27:35 INFO  : 'ps7_post_config' command is executed.
+20:27:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:35 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:27:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:35 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:27:35 INFO  : 'configparams force-mem-access 0' command is executed.
+20:27:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:27:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:35 INFO  : 'con' command is executed.
+20:27:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:27:35 INFO  : Disconnected from the channel tcfchan#3.
+20:27:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:27:57 INFO  : 'fpga -state' command is executed.
+20:27:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:27:57 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:27:57 INFO  : 'jtag frequency' command is executed.
+20:27:57 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:27:57 INFO  : Context for 'APU' is selected.
+20:27:57 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:27:57 INFO  : 'configparams force-mem-access 1' command is executed.
+20:27:57 INFO  : Context for 'APU' is selected.
+20:27:57 INFO  : 'stop' command is executed.
+20:27:57 INFO  : 'ps7_init' command is executed.
+20:27:57 INFO  : 'ps7_post_config' command is executed.
+20:27:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:27:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:58 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:27:58 INFO  : 'configparams force-mem-access 0' command is executed.
+20:27:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:27:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:27:58 INFO  : 'con' command is executed.
+20:27:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:27:58 INFO  : Disconnected from the channel tcfchan#4.
+20:30:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:30:38 INFO  : 'fpga -state' command is executed.
+20:30:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:30:38 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:30:38 INFO  : 'jtag frequency' command is executed.
+20:30:38 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:30:38 INFO  : Context for 'APU' is selected.
+20:30:38 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:30:38 INFO  : 'configparams force-mem-access 1' command is executed.
+20:30:38 INFO  : Context for 'APU' is selected.
+20:30:38 INFO  : 'stop' command is executed.
+20:30:38 INFO  : 'ps7_init' command is executed.
+20:30:38 INFO  : 'ps7_post_config' command is executed.
+20:30:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:30:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:39 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:30:39 INFO  : 'configparams force-mem-access 0' command is executed.
+20:30:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:30:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:30:39 INFO  : 'con' command is executed.
+20:30:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:30:39 INFO  : Disconnected from the channel tcfchan#5.
+20:31:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:31:02 INFO  : 'fpga -state' command is executed.
+20:31:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:31:02 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:31:02 INFO  : 'jtag frequency' command is executed.
+20:31:02 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:31:02 INFO  : Context for 'APU' is selected.
+20:31:02 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:31:02 INFO  : 'configparams force-mem-access 1' command is executed.
+20:31:02 INFO  : Context for 'APU' is selected.
+20:31:02 INFO  : 'stop' command is executed.
+20:31:03 INFO  : 'ps7_init' command is executed.
+20:31:03 INFO  : 'ps7_post_config' command is executed.
+20:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:03 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:31:03 INFO  : 'configparams force-mem-access 0' command is executed.
+20:31:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:31:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:03 INFO  : 'con' command is executed.
+20:31:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:31:03 INFO  : Disconnected from the channel tcfchan#6.
+20:32:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+20:32:02 INFO  : 'fpga -state' command is executed.
+20:32:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:32:02 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+20:32:02 INFO  : 'jtag frequency' command is executed.
+20:32:02 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:32:02 INFO  : Context for 'APU' is selected.
+20:32:02 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:32:02 INFO  : 'configparams force-mem-access 1' command is executed.
+20:32:02 INFO  : Context for 'APU' is selected.
+20:32:02 INFO  : 'stop' command is executed.
+20:32:03 INFO  : 'ps7_init' command is executed.
+20:32:03 INFO  : 'ps7_post_config' command is executed.
+20:32:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:32:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:03 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:32:03 INFO  : 'configparams force-mem-access 0' command is executed.
+20:32:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:32:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:32:03 INFO  : 'con' command is executed.
+20:32:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+20:32:03 INFO  : Disconnected from the channel tcfchan#7.
+21:16:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:16:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:16:24 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:17:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:17:21 INFO  : 'fpga -state' command is executed.
+21:17:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:17:21 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:17:21 INFO  : 'jtag frequency' command is executed.
+21:17:21 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:17:21 INFO  : Context for 'APU' is selected.
+21:17:21 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:17:21 INFO  : 'configparams force-mem-access 1' command is executed.
+21:17:21 INFO  : Context for 'APU' is selected.
+21:17:21 INFO  : 'stop' command is executed.
+21:17:21 INFO  : 'ps7_init' command is executed.
+21:17:21 INFO  : 'ps7_post_config' command is executed.
+21:17:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:17:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:22 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:17:22 INFO  : 'configparams force-mem-access 0' command is executed.
+21:17:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:17:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:17:22 INFO  : 'con' command is executed.
+21:17:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:17:22 INFO  : Disconnected from the channel tcfchan#8.
+21:22:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:22:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:23:00 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:23:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:23:12 INFO  : 'fpga -state' command is executed.
+21:23:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:23:12 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:23:12 INFO  : 'jtag frequency' command is executed.
+21:23:12 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:23:12 INFO  : Context for 'APU' is selected.
+21:23:12 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:23:12 INFO  : 'configparams force-mem-access 1' command is executed.
+21:23:12 INFO  : Context for 'APU' is selected.
+21:23:12 INFO  : 'stop' command is executed.
+21:23:12 INFO  : 'ps7_init' command is executed.
+21:23:12 INFO  : 'ps7_post_config' command is executed.
+21:23:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:23:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:13 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:23:13 INFO  : 'configparams force-mem-access 0' command is executed.
+21:23:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:23:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:23:13 INFO  : 'con' command is executed.
+21:23:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:23:13 INFO  : Disconnected from the channel tcfchan#9.
+21:24:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:24:11 INFO  : 'fpga -state' command is executed.
+21:24:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:24:11 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:24:11 INFO  : 'jtag frequency' command is executed.
+21:24:11 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:24:11 INFO  : Context for 'APU' is selected.
+21:24:11 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:24:11 INFO  : 'configparams force-mem-access 1' command is executed.
+21:24:11 INFO  : Context for 'APU' is selected.
+21:24:11 INFO  : 'stop' command is executed.
+21:24:12 INFO  : 'ps7_init' command is executed.
+21:24:12 INFO  : 'ps7_post_config' command is executed.
+21:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:24:12 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:24:12 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:24:12 INFO  : 'configparams force-mem-access 0' command is executed.
+21:24:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:24:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:24:12 INFO  : 'con' command is executed.
+21:24:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:24:12 INFO  : Disconnected from the channel tcfchan#10.
+21:25:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:25:40 INFO  : 'fpga -state' command is executed.
+21:25:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:25:40 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:25:40 INFO  : 'jtag frequency' command is executed.
+21:25:40 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:25:40 INFO  : Context for 'APU' is selected.
+21:25:40 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:25:40 INFO  : 'configparams force-mem-access 1' command is executed.
+21:25:40 INFO  : Context for 'APU' is selected.
+21:25:40 INFO  : 'stop' command is executed.
+21:25:41 INFO  : 'ps7_init' command is executed.
+21:25:41 INFO  : 'ps7_post_config' command is executed.
+21:25:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:25:41 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:25:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:25:41 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:25:41 INFO  : 'configparams force-mem-access 0' command is executed.
+21:25:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:25:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:25:41 INFO  : 'con' command is executed.
+21:25:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:25:41 INFO  : Disconnected from the channel tcfchan#11.
+21:29:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:29:26 INFO  : 'fpga -state' command is executed.
+21:29:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:29:26 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:29:26 INFO  : 'jtag frequency' command is executed.
+21:29:26 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:29:26 INFO  : Context for 'APU' is selected.
+21:29:26 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:29:26 INFO  : 'configparams force-mem-access 1' command is executed.
+21:29:26 INFO  : Context for 'APU' is selected.
+21:29:26 INFO  : 'stop' command is executed.
+21:29:27 INFO  : 'ps7_init' command is executed.
+21:29:27 INFO  : 'ps7_post_config' command is executed.
+21:29:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:29:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:27 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:29:27 INFO  : 'configparams force-mem-access 0' command is executed.
+21:29:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:29:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:29:27 INFO  : 'con' command is executed.
+21:29:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:29:27 INFO  : Disconnected from the channel tcfchan#12.
+21:30:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:30:49 INFO  : 'fpga -state' command is executed.
+21:30:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:30:50 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:30:50 INFO  : 'jtag frequency' command is executed.
+21:30:50 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:30:50 INFO  : Context for 'APU' is selected.
+21:30:50 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:30:50 INFO  : 'configparams force-mem-access 1' command is executed.
+21:30:50 INFO  : Context for 'APU' is selected.
+21:30:50 INFO  : 'stop' command is executed.
+21:30:50 INFO  : 'ps7_init' command is executed.
+21:30:50 INFO  : 'ps7_post_config' command is executed.
+21:30:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:50 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:30:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:51 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:30:51 INFO  : 'configparams force-mem-access 0' command is executed.
+21:30:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:30:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:30:51 INFO  : 'con' command is executed.
+21:30:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:30:51 INFO  : Disconnected from the channel tcfchan#13.
+21:31:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:31:30 INFO  : 'fpga -state' command is executed.
+21:31:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:31:30 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:31:30 INFO  : 'jtag frequency' command is executed.
+21:31:30 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:31:30 INFO  : Context for 'APU' is selected.
+21:31:30 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:31:30 INFO  : 'configparams force-mem-access 1' command is executed.
+21:31:30 INFO  : Context for 'APU' is selected.
+21:31:30 INFO  : 'stop' command is executed.
+21:31:31 INFO  : 'ps7_init' command is executed.
+21:31:31 INFO  : 'ps7_post_config' command is executed.
+21:31:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:31:31 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:31:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:31:31 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:31:31 INFO  : 'configparams force-mem-access 0' command is executed.
+21:31:31 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:31:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:31:31 INFO  : 'con' command is executed.
+21:31:31 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:31:31 INFO  : Disconnected from the channel tcfchan#14.
+21:31:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:31:59 INFO  : 'fpga -state' command is executed.
+21:31:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:32:00 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:32:00 INFO  : 'jtag frequency' command is executed.
+21:32:00 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:32:00 INFO  : Context for 'APU' is selected.
+21:32:00 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:32:00 INFO  : 'configparams force-mem-access 1' command is executed.
+21:32:00 INFO  : Context for 'APU' is selected.
+21:32:00 INFO  : 'stop' command is executed.
+21:32:00 INFO  : 'ps7_init' command is executed.
+21:32:00 INFO  : 'ps7_post_config' command is executed.
+21:32:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:32:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:01 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:32:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:32:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:32:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:01 INFO  : 'con' command is executed.
+21:32:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:32:01 INFO  : Disconnected from the channel tcfchan#15.
+21:32:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:32:44 INFO  : 'fpga -state' command is executed.
+21:32:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:32:44 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:32:44 INFO  : 'jtag frequency' command is executed.
+21:32:44 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:32:44 INFO  : Context for 'APU' is selected.
+21:32:45 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:32:45 INFO  : 'configparams force-mem-access 1' command is executed.
+21:32:45 INFO  : Context for 'APU' is selected.
+21:32:45 INFO  : 'stop' command is executed.
+21:32:45 INFO  : 'ps7_init' command is executed.
+21:32:45 INFO  : 'ps7_post_config' command is executed.
+21:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:45 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:32:45 INFO  : 'configparams force-mem-access 0' command is executed.
+21:32:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:32:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:32:45 INFO  : 'con' command is executed.
+21:32:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:32:45 INFO  : Disconnected from the channel tcfchan#16.
+21:33:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:33:08 INFO  : 'fpga -state' command is executed.
+21:33:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:33:09 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:33:09 INFO  : 'jtag frequency' command is executed.
+21:33:09 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:33:09 INFO  : Context for 'APU' is selected.
+21:33:09 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:33:09 INFO  : 'configparams force-mem-access 1' command is executed.
+21:33:09 INFO  : Context for 'APU' is selected.
+21:33:09 INFO  : 'stop' command is executed.
+21:33:09 INFO  : 'ps7_init' command is executed.
+21:33:09 INFO  : 'ps7_post_config' command is executed.
+21:33:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:33:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:33:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:33:10 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:33:10 INFO  : 'configparams force-mem-access 0' command is executed.
+21:33:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:33:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:33:10 INFO  : 'con' command is executed.
+21:33:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:33:10 INFO  : Disconnected from the channel tcfchan#17.
+21:34:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:34:45 INFO  : 'fpga -state' command is executed.
+21:34:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:34:45 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:34:45 INFO  : 'jtag frequency' command is executed.
+21:34:45 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:34:45 INFO  : Context for 'APU' is selected.
+21:34:45 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:34:45 INFO  : 'configparams force-mem-access 1' command is executed.
+21:34:45 INFO  : Context for 'APU' is selected.
+21:34:45 INFO  : 'stop' command is executed.
+21:34:46 INFO  : 'ps7_init' command is executed.
+21:34:46 INFO  : 'ps7_post_config' command is executed.
+21:34:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:34:46 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:34:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:34:46 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:34:46 INFO  : 'configparams force-mem-access 0' command is executed.
+21:34:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:34:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:34:46 INFO  : 'con' command is executed.
+21:34:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:34:46 INFO  : Disconnected from the channel tcfchan#18.
+21:35:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:35:13 INFO  : 'fpga -state' command is executed.
+21:35:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:14 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:35:14 INFO  : 'jtag frequency' command is executed.
+21:35:14 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:35:14 INFO  : Context for 'APU' is selected.
+21:35:14 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:35:14 INFO  : 'configparams force-mem-access 1' command is executed.
+21:35:14 INFO  : Context for 'APU' is selected.
+21:35:14 INFO  : 'stop' command is executed.
+21:35:14 INFO  : 'ps7_init' command is executed.
+21:35:14 INFO  : 'ps7_post_config' command is executed.
+21:35:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:35:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:15 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:35:15 INFO  : 'configparams force-mem-access 0' command is executed.
+21:35:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:35:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:15 INFO  : 'con' command is executed.
+21:35:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:35:15 INFO  : Disconnected from the channel tcfchan#19.
+21:35:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:35:42 INFO  : 'fpga -state' command is executed.
+21:35:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:35:42 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:35:42 INFO  : 'jtag frequency' command is executed.
+21:35:42 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:35:42 INFO  : Context for 'APU' is selected.
+21:35:42 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:35:42 INFO  : 'configparams force-mem-access 1' command is executed.
+21:35:42 INFO  : Context for 'APU' is selected.
+21:35:42 INFO  : 'stop' command is executed.
+21:35:43 INFO  : 'ps7_init' command is executed.
+21:35:43 INFO  : 'ps7_post_config' command is executed.
+21:35:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:43 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:35:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:43 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:35:43 INFO  : 'configparams force-mem-access 0' command is executed.
+21:35:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:35:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:35:43 INFO  : 'con' command is executed.
+21:35:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:35:43 INFO  : Disconnected from the channel tcfchan#20.
+21:42:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:42:39 INFO  : 'fpga -state' command is executed.
+21:42:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:42:40 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:42:40 INFO  : 'jtag frequency' command is executed.
+21:42:40 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:42:40 INFO  : Context for 'APU' is selected.
+21:42:40 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:42:40 INFO  : 'configparams force-mem-access 1' command is executed.
+21:42:40 INFO  : Context for 'APU' is selected.
+21:42:40 INFO  : 'stop' command is executed.
+21:42:40 INFO  : 'ps7_init' command is executed.
+21:42:40 INFO  : 'ps7_post_config' command is executed.
+21:42:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:42:40 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:42:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:42:40 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:42:40 INFO  : 'configparams force-mem-access 0' command is executed.
+21:42:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:42:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:42:40 INFO  : 'con' command is executed.
+21:42:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:42:41 INFO  : Disconnected from the channel tcfchan#21.
+21:43:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:43:20 INFO  : 'fpga -state' command is executed.
+21:43:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:43:21 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:43:21 INFO  : 'jtag frequency' command is executed.
+21:43:21 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:43:21 INFO  : Context for 'APU' is selected.
+21:43:21 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:43:21 INFO  : 'configparams force-mem-access 1' command is executed.
+21:43:21 INFO  : Context for 'APU' is selected.
+21:43:21 INFO  : 'stop' command is executed.
+21:43:21 INFO  : 'ps7_init' command is executed.
+21:43:21 INFO  : 'ps7_post_config' command is executed.
+21:43:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:21 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:43:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:22 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:43:22 INFO  : 'configparams force-mem-access 0' command is executed.
+21:43:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:43:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:43:22 INFO  : 'con' command is executed.
+21:43:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:43:22 INFO  : Disconnected from the channel tcfchan#22.
+21:44:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:44:16 INFO  : 'fpga -state' command is executed.
+21:44:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:44:17 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:44:17 INFO  : 'jtag frequency' command is executed.
+21:44:17 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:44:17 INFO  : Context for 'APU' is selected.
+21:44:17 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:44:17 INFO  : 'configparams force-mem-access 1' command is executed.
+21:44:17 INFO  : Context for 'APU' is selected.
+21:44:17 INFO  : 'stop' command is executed.
+21:44:17 INFO  : 'ps7_init' command is executed.
+21:44:17 INFO  : 'ps7_post_config' command is executed.
+21:44:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:17 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:44:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:18 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:44:18 INFO  : 'configparams force-mem-access 0' command is executed.
+21:44:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:44:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:44:18 INFO  : 'con' command is executed.
+21:44:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:44:18 INFO  : Disconnected from the channel tcfchan#23.
+21:46:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:46:32 INFO  : 'fpga -state' command is executed.
+21:46:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:46:32 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:46:32 INFO  : 'jtag frequency' command is executed.
+21:46:32 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:46:32 INFO  : Context for 'APU' is selected.
+21:46:32 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:46:32 INFO  : 'configparams force-mem-access 1' command is executed.
+21:46:32 INFO  : Context for 'APU' is selected.
+21:46:32 INFO  : 'stop' command is executed.
+21:46:33 INFO  : 'ps7_init' command is executed.
+21:46:33 INFO  : 'ps7_post_config' command is executed.
+21:46:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:33 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:46:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:33 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:46:33 INFO  : 'configparams force-mem-access 0' command is executed.
+21:46:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:46:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:46:33 INFO  : 'con' command is executed.
+21:46:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:46:33 INFO  : Disconnected from the channel tcfchan#24.
+21:58:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:58:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:58:50 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+21:59:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:59:08 INFO  : 'fpga -state' command is executed.
+21:59:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:09 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:59:09 INFO  : 'jtag frequency' command is executed.
+21:59:09 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:59:09 INFO  : Context for 'APU' is selected.
+21:59:09 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:59:09 INFO  : 'configparams force-mem-access 1' command is executed.
+21:59:09 INFO  : Context for 'APU' is selected.
+21:59:09 INFO  : 'stop' command is executed.
+21:59:09 INFO  : 'ps7_init' command is executed.
+21:59:09 INFO  : 'ps7_post_config' command is executed.
+21:59:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:09 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:59:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:10 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:59:10 INFO  : 'configparams force-mem-access 0' command is executed.
+21:59:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:59:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:10 INFO  : 'con' command is executed.
+21:59:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:59:10 INFO  : Disconnected from the channel tcfchan#25.
+21:59:44 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+21:59:44 INFO  : 'fpga -state' command is executed.
+21:59:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:59:44 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+21:59:44 INFO  : 'jtag frequency' command is executed.
+21:59:44 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+21:59:44 INFO  : Context for 'APU' is selected.
+21:59:44 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+21:59:44 INFO  : 'configparams force-mem-access 1' command is executed.
+21:59:44 INFO  : Context for 'APU' is selected.
+21:59:44 INFO  : 'stop' command is executed.
+21:59:45 INFO  : 'ps7_init' command is executed.
+21:59:45 INFO  : 'ps7_post_config' command is executed.
+21:59:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:45 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:59:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:45 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:59:45 INFO  : 'configparams force-mem-access 0' command is executed.
+21:59:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:59:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:59:45 INFO  : 'con' command is executed.
+21:59:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+21:59:45 INFO  : Disconnected from the channel tcfchan#26.
+22:00:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:00:26 INFO  : 'fpga -state' command is executed.
+22:00:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:27 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:00:27 INFO  : 'jtag frequency' command is executed.
+22:00:27 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:00:27 INFO  : Context for 'APU' is selected.
+22:00:27 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:00:27 INFO  : 'configparams force-mem-access 1' command is executed.
+22:00:27 INFO  : Context for 'APU' is selected.
+22:00:27 INFO  : 'stop' command is executed.
+22:00:27 INFO  : 'ps7_init' command is executed.
+22:00:27 INFO  : 'ps7_post_config' command is executed.
+22:00:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:00:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:28 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:00:28 INFO  : 'configparams force-mem-access 0' command is executed.
+22:00:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:00:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:28 INFO  : 'con' command is executed.
+22:00:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:00:28 INFO  : Disconnected from the channel tcfchan#27.
+22:00:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:00:54 INFO  : 'fpga -state' command is executed.
+22:00:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:00:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:00:55 INFO  : 'jtag frequency' command is executed.
+22:00:55 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:00:55 INFO  : Context for 'APU' is selected.
+22:00:55 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:00:55 INFO  : 'configparams force-mem-access 1' command is executed.
+22:00:55 INFO  : Context for 'APU' is selected.
+22:00:55 INFO  : 'stop' command is executed.
+22:00:55 INFO  : 'ps7_init' command is executed.
+22:00:55 INFO  : 'ps7_post_config' command is executed.
+22:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:55 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:00:55 INFO  : 'configparams force-mem-access 0' command is executed.
+22:00:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:00:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:00:55 INFO  : 'con' command is executed.
+22:00:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:00:56 INFO  : Disconnected from the channel tcfchan#28.
+22:01:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:01:53 INFO  : 'fpga -state' command is executed.
+22:01:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:01:53 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:01:53 INFO  : 'jtag frequency' command is executed.
+22:01:53 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:01:53 INFO  : Context for 'APU' is selected.
+22:01:53 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:01:53 INFO  : 'configparams force-mem-access 1' command is executed.
+22:01:53 INFO  : Context for 'APU' is selected.
+22:01:53 INFO  : 'stop' command is executed.
+22:01:54 INFO  : 'ps7_init' command is executed.
+22:01:54 INFO  : 'ps7_post_config' command is executed.
+22:01:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:01:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:54 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:01:54 INFO  : 'configparams force-mem-access 0' command is executed.
+22:01:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:01:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:54 INFO  : 'con' command is executed.
+22:01:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:01:54 INFO  : Disconnected from the channel tcfchan#29.
+22:02:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:02:21 INFO  : 'fpga -state' command is executed.
+22:02:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:21 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:02:22 INFO  : 'jtag frequency' command is executed.
+22:02:22 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:02:22 INFO  : Context for 'APU' is selected.
+22:02:22 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:02:22 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:22 INFO  : Context for 'APU' is selected.
+22:02:22 INFO  : 'stop' command is executed.
+22:02:22 INFO  : 'ps7_init' command is executed.
+22:02:22 INFO  : 'ps7_post_config' command is executed.
+22:02:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:02:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:22 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:22 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:22 INFO  : 'con' command is executed.
+22:02:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:02:22 INFO  : Disconnected from the channel tcfchan#30.
+22:02:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:02:48 INFO  : 'fpga -state' command is executed.
+22:02:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:49 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:02:49 INFO  : 'jtag frequency' command is executed.
+22:02:49 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:02:49 INFO  : Context for 'APU' is selected.
+22:02:49 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:02:49 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:49 INFO  : Context for 'APU' is selected.
+22:02:49 INFO  : 'stop' command is executed.
+22:02:49 INFO  : 'ps7_init' command is executed.
+22:02:49 INFO  : 'ps7_post_config' command is executed.
+22:02:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:02:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:50 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:50 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:50 INFO  : 'con' command is executed.
+22:02:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:02:50 INFO  : Disconnected from the channel tcfchan#31.
+22:03:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:03:10 INFO  : 'fpga -state' command is executed.
+22:03:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:03:11 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:03:11 INFO  : 'jtag frequency' command is executed.
+22:03:11 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:03:11 INFO  : Context for 'APU' is selected.
+22:03:11 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:03:11 INFO  : 'configparams force-mem-access 1' command is executed.
+22:03:11 INFO  : Context for 'APU' is selected.
+22:03:11 INFO  : 'stop' command is executed.
+22:03:11 INFO  : 'ps7_init' command is executed.
+22:03:11 INFO  : 'ps7_post_config' command is executed.
+22:03:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:11 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:03:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:11 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:03:11 INFO  : 'configparams force-mem-access 0' command is executed.
+22:03:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:03:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:12 INFO  : 'con' command is executed.
+22:03:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:03:12 INFO  : Disconnected from the channel tcfchan#32.
+22:03:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:03:29 INFO  : 'fpga -state' command is executed.
+22:03:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:03:29 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:03:29 INFO  : 'jtag frequency' command is executed.
+22:03:30 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:03:30 INFO  : Context for 'APU' is selected.
+22:03:30 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:03:30 INFO  : 'configparams force-mem-access 1' command is executed.
+22:03:30 INFO  : Context for 'APU' is selected.
+22:03:30 INFO  : 'stop' command is executed.
+22:03:30 INFO  : 'ps7_init' command is executed.
+22:03:30 INFO  : 'ps7_post_config' command is executed.
+22:03:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:30 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:03:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:30 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:03:30 INFO  : 'configparams force-mem-access 0' command is executed.
+22:03:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:03:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:30 INFO  : 'con' command is executed.
+22:03:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:03:30 INFO  : Disconnected from the channel tcfchan#33.
+22:11:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:11:13 INFO  : 'fpga -state' command is executed.
+22:11:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:13 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:11:13 INFO  : 'jtag frequency' command is executed.
+22:11:13 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:11:13 INFO  : Context for 'APU' is selected.
+22:11:13 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:11:13 INFO  : 'configparams force-mem-access 1' command is executed.
+22:11:13 INFO  : Context for 'APU' is selected.
+22:11:13 INFO  : 'stop' command is executed.
+22:11:13 INFO  : 'ps7_init' command is executed.
+22:11:13 INFO  : 'ps7_post_config' command is executed.
+22:11:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:14 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:11:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:14 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:11:14 INFO  : 'configparams force-mem-access 0' command is executed.
+22:11:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:11:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:11:14 INFO  : 'con' command is executed.
+22:11:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:11:14 INFO  : Disconnected from the channel tcfchan#34.
+22:12:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:12:43 INFO  : 'fpga -state' command is executed.
+22:12:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:43 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:12:43 INFO  : 'jtag frequency' command is executed.
+22:12:43 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:12:43 INFO  : Context for 'APU' is selected.
+22:12:44 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:12:44 INFO  : 'configparams force-mem-access 1' command is executed.
+22:12:44 INFO  : Context for 'APU' is selected.
+22:12:44 INFO  : 'stop' command is executed.
+22:12:44 INFO  : 'ps7_init' command is executed.
+22:12:44 INFO  : 'ps7_post_config' command is executed.
+22:12:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:44 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:12:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:44 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:12:44 INFO  : 'configparams force-mem-access 0' command is executed.
+22:12:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:12:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:12:44 INFO  : 'con' command is executed.
+22:12:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:12:44 INFO  : Disconnected from the channel tcfchan#35.
+22:13:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:13:14 INFO  : 'fpga -state' command is executed.
+22:13:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:15 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:13:15 INFO  : 'jtag frequency' command is executed.
+22:13:15 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:13:15 INFO  : Context for 'APU' is selected.
+22:13:15 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:13:15 INFO  : 'configparams force-mem-access 1' command is executed.
+22:13:15 INFO  : Context for 'APU' is selected.
+22:13:15 INFO  : 'stop' command is executed.
+22:13:15 INFO  : 'ps7_init' command is executed.
+22:13:15 INFO  : 'ps7_post_config' command is executed.
+22:13:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:13:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:16 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:13:16 INFO  : 'configparams force-mem-access 0' command is executed.
+22:13:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:13:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:16 INFO  : 'con' command is executed.
+22:13:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:13:16 INFO  : Disconnected from the channel tcfchan#36.
+22:13:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:13:38 INFO  : 'fpga -state' command is executed.
+22:13:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:13:38 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:13:39 INFO  : 'jtag frequency' command is executed.
+22:13:39 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:13:39 INFO  : Context for 'APU' is selected.
+22:13:39 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:13:39 INFO  : 'configparams force-mem-access 1' command is executed.
+22:13:39 INFO  : Context for 'APU' is selected.
+22:13:39 INFO  : 'stop' command is executed.
+22:13:39 INFO  : 'ps7_init' command is executed.
+22:13:39 INFO  : 'ps7_post_config' command is executed.
+22:13:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:13:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:39 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:13:39 INFO  : 'configparams force-mem-access 0' command is executed.
+22:13:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:13:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:13:39 INFO  : 'con' command is executed.
+22:13:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:13:39 INFO  : Disconnected from the channel tcfchan#37.
+22:15:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:15:23 INFO  : 'fpga -state' command is executed.
+22:15:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:15:24 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:15:24 INFO  : 'jtag frequency' command is executed.
+22:15:24 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:15:24 INFO  : Context for 'APU' is selected.
+22:15:24 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:15:24 INFO  : 'configparams force-mem-access 1' command is executed.
+22:15:24 INFO  : Context for 'APU' is selected.
+22:15:24 INFO  : 'stop' command is executed.
+22:15:24 INFO  : 'ps7_init' command is executed.
+22:15:24 INFO  : 'ps7_post_config' command is executed.
+22:15:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:15:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:15:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:15:25 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:15:25 INFO  : 'configparams force-mem-access 0' command is executed.
+22:15:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:15:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:15:25 INFO  : 'con' command is executed.
+22:15:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:15:25 INFO  : Disconnected from the channel tcfchan#38.
+22:17:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:17:06 INFO  : 'fpga -state' command is executed.
+22:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:17:06 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:17:06 INFO  : 'jtag frequency' command is executed.
+22:17:06 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:17:06 INFO  : Context for 'APU' is selected.
+22:17:06 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:17:06 INFO  : 'configparams force-mem-access 1' command is executed.
+22:17:06 INFO  : Context for 'APU' is selected.
+22:17:06 INFO  : 'stop' command is executed.
+22:17:07 INFO  : 'ps7_init' command is executed.
+22:17:07 INFO  : 'ps7_post_config' command is executed.
+22:17:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:17:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:07 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:17:07 INFO  : 'configparams force-mem-access 0' command is executed.
+22:17:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:17:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:07 INFO  : 'con' command is executed.
+22:17:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:17:07 INFO  : Disconnected from the channel tcfchan#39.
+22:17:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:17:55 INFO  : 'fpga -state' command is executed.
+22:17:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:17:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:17:55 INFO  : 'jtag frequency' command is executed.
+22:17:55 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:17:55 INFO  : Context for 'APU' is selected.
+22:17:55 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:17:55 INFO  : 'configparams force-mem-access 1' command is executed.
+22:17:55 INFO  : Context for 'APU' is selected.
+22:17:55 INFO  : 'stop' command is executed.
+22:17:56 INFO  : 'ps7_init' command is executed.
+22:17:56 INFO  : 'ps7_post_config' command is executed.
+22:17:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:17:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:56 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:17:56 INFO  : 'configparams force-mem-access 0' command is executed.
+22:17:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:17:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:17:56 INFO  : 'con' command is executed.
+22:17:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:17:56 INFO  : Disconnected from the channel tcfchan#40.
+22:18:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:18:36 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:18:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:18:48 INFO  : 'fpga -state' command is executed.
+22:18:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:18:48 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:18:48 INFO  : 'jtag frequency' command is executed.
+22:18:48 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:18:48 INFO  : Context for 'APU' is selected.
+22:18:48 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:18:48 INFO  : 'configparams force-mem-access 1' command is executed.
+22:18:48 INFO  : Context for 'APU' is selected.
+22:18:48 INFO  : 'stop' command is executed.
+22:18:48 INFO  : 'ps7_init' command is executed.
+22:18:49 INFO  : 'ps7_post_config' command is executed.
+22:18:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:18:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:49 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:18:49 INFO  : 'configparams force-mem-access 0' command is executed.
+22:18:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:18:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:18:49 INFO  : 'con' command is executed.
+22:18:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:18:49 INFO  : Disconnected from the channel tcfchan#41.
+22:19:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:19:18 INFO  : 'fpga -state' command is executed.
+22:19:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:18 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:19:18 INFO  : 'jtag frequency' command is executed.
+22:19:18 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:19:18 INFO  : Context for 'APU' is selected.
+22:19:18 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:19:18 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:18 INFO  : Context for 'APU' is selected.
+22:19:18 INFO  : 'stop' command is executed.
+22:19:19 INFO  : 'ps7_init' command is executed.
+22:19:19 INFO  : 'ps7_post_config' command is executed.
+22:19:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:19:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:19 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:19 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:19 INFO  : 'con' command is executed.
+22:19:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:19:19 INFO  : Disconnected from the channel tcfchan#42.
+22:19:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:19:38 INFO  : 'fpga -state' command is executed.
+22:19:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:19:39 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:19:39 INFO  : 'jtag frequency' command is executed.
+22:19:39 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:19:39 INFO  : Context for 'APU' is selected.
+22:19:39 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:19:39 INFO  : 'configparams force-mem-access 1' command is executed.
+22:19:39 INFO  : Context for 'APU' is selected.
+22:19:39 INFO  : 'stop' command is executed.
+22:19:39 INFO  : 'ps7_init' command is executed.
+22:19:39 INFO  : 'ps7_post_config' command is executed.
+22:19:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:39 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:19:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:39 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:19:40 INFO  : 'configparams force-mem-access 0' command is executed.
+22:19:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:19:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:19:40 INFO  : 'con' command is executed.
+22:19:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:19:40 INFO  : Disconnected from the channel tcfchan#43.
+22:20:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:20:07 INFO  : 'fpga -state' command is executed.
+22:20:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:20:07 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:20:07 INFO  : 'jtag frequency' command is executed.
+22:20:07 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:20:07 INFO  : Context for 'APU' is selected.
+22:20:07 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:20:07 INFO  : 'configparams force-mem-access 1' command is executed.
+22:20:07 INFO  : Context for 'APU' is selected.
+22:20:07 INFO  : 'stop' command is executed.
+22:20:08 INFO  : 'ps7_init' command is executed.
+22:20:08 INFO  : 'ps7_post_config' command is executed.
+22:20:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:20:08 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:20:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:20:08 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:20:08 INFO  : 'configparams force-mem-access 0' command is executed.
+22:20:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:20:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:20:08 INFO  : 'con' command is executed.
+22:20:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:20:08 INFO  : Disconnected from the channel tcfchan#44.
+22:54:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1606431219176,  Project:1606242835151
+22:54:17 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:54:49 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+22:55:09 INFO  : Registering command handlers for SDK TCF services
+22:55:10 INFO  : Launching XSCT server: xsct.bat -interactive D:\HANIN\ROB307\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+22:55:12 INFO  : XSCT server has started successfully.
+22:55:12 INFO  : Successfully done setting XSCT server connection channel  
+22:55:12 INFO  : Successfully done setting SDK workspace  
+22:55:12 INFO  : Processing command line option -hwspec D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+22:55:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:55:30 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:55:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:55:58 INFO  : 'fpga -state' command is executed.
+22:55:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:55:58 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:55:58 INFO  : 'jtag frequency' command is executed.
+22:55:58 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:55:58 INFO  : Context for 'APU' is selected.
+22:55:59 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:55:59 INFO  : 'configparams force-mem-access 1' command is executed.
+22:55:59 INFO  : Context for 'APU' is selected.
+22:55:59 INFO  : 'stop' command is executed.
+22:55:59 INFO  : 'ps7_init' command is executed.
+22:55:59 INFO  : 'ps7_post_config' command is executed.
+22:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:59 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:55:59 INFO  : 'configparams force-mem-access 0' command is executed.
+22:55:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:55:59 INFO  : 'con' command is executed.
+22:55:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:55:59 INFO  : Disconnected from the channel tcfchan#1.
+22:57:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:57:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:57:34 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+22:58:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:58:02 INFO  : 'fpga -state' command is executed.
+22:58:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:02 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:58:02 INFO  : 'jtag frequency' command is executed.
+22:58:02 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:58:02 INFO  : Context for 'APU' is selected.
+22:58:02 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:58:02 INFO  : 'configparams force-mem-access 1' command is executed.
+22:58:02 INFO  : Context for 'APU' is selected.
+22:58:02 INFO  : 'stop' command is executed.
+22:58:03 INFO  : 'ps7_init' command is executed.
+22:58:03 INFO  : 'ps7_post_config' command is executed.
+22:58:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:58:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:03 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:58:03 INFO  : 'configparams force-mem-access 0' command is executed.
+22:58:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:58:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:03 INFO  : 'con' command is executed.
+22:58:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:58:03 INFO  : Disconnected from the channel tcfchan#2.
+22:58:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:58:24 INFO  : 'fpga -state' command is executed.
+22:58:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:24 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:58:24 INFO  : 'jtag frequency' command is executed.
+22:58:24 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:58:24 INFO  : Context for 'APU' is selected.
+22:58:25 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:58:25 INFO  : 'configparams force-mem-access 1' command is executed.
+22:58:25 INFO  : Context for 'APU' is selected.
+22:58:25 INFO  : 'stop' command is executed.
+22:58:25 INFO  : 'ps7_init' command is executed.
+22:58:25 INFO  : 'ps7_post_config' command is executed.
+22:58:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:25 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:58:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:25 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Debug/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:58:25 INFO  : 'configparams force-mem-access 0' command is executed.
+22:58:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Debug/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:58:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:25 INFO  : 'con' command is executed.
+22:58:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+con
+----------------End of Script----------------
+
+22:58:25 INFO  : Disconnected from the channel tcfchan#3.
+22:58:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:58:41 INFO  : FPGA configured successfully with bitstream "D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_1/design_1_wrapper.bit"
+22:58:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248773728" && level==0} -index 1' command is executed.
+22:58:54 INFO  : 'fpga -state' command is executed.
+22:58:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:58:55 INFO  : Jtag cable 'Digilent Zed 210248773728' is selected.
+22:58:55 INFO  : 'jtag frequency' command is executed.
+22:58:55 INFO  : Sourcing of 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+22:58:55 INFO  : Context for 'APU' is selected.
+22:58:55 INFO  : Hardware design information is loaded from 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+22:58:55 INFO  : 'configparams force-mem-access 1' command is executed.
+22:58:55 INFO  : Context for 'APU' is selected.
+22:58:55 INFO  : 'stop' command is executed.
+22:58:55 INFO  : 'ps7_init' command is executed.
+22:58:55 INFO  : 'ps7_post_config' command is executed.
+22:58:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:55 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+22:58:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:58:56 INFO  : The application 'D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:58:56 INFO  : 'configparams force-mem-access 0' command is executed.
+22:58:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+loadhw -hw D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zed 210248773728"} -index 0
+dow D:/HANIN/ROB307/crossbarZynq/axiCrossBar/axiCrossBar.sdk/tes_noc/Release/tes_noc.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:58:57 INFO  : Disconnected from the channel tcfchan#4.
+23:16:51 INFO  : Registering command handlers for SDK TCF services
+23:16:53 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\miche\OneDrive\Desktop\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+23:17:00 INFO  : XSCT server has started successfully.
+23:17:10 INFO  : Successfully done setting XSCT server connection channel  
+23:17:10 INFO  : Successfully done setting SDK workspace  
+23:17:10 INFO  : Processing command line option -hwspec C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+00:15:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:51:26 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1673394377744,  Project:1673383840601
+00:51:26 INFO  : Project design_1_wrapper_hw_platform_2's source hardware specification located at C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:51:53 INFO  : Copied contents of C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+01:09:38 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\miche\OneDrive\Desktop\crossbarZynq\axiCrossBar\axiCrossBar.sdk\temp_xsdb_launch_script.tcl
+01:09:41 INFO  : XSCT server has started successfully.
+01:09:41 INFO  : Successfully done setting XSCT server connection channel  
+01:09:45 INFO  : Successfully done setting SDK workspace  
+01:09:54 INFO  : Registering command handlers for SDK TCF services
+01:09:54 INFO  : Processing command line option -hwspec C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+01:09:54 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_2.
+01:09:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1673395120004,  Project:1673394377744
+01:09:57 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_2' is different from C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf.
+01:10:00 INFO  : Copied contents of C:/Users/miche/OneDrive/Desktop/crossbarZynq/axiCrossBar/axiCrossBar.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_2\system.hdf.
+01:10:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:10:06 INFO  : Clearing existing target manager status.
+01:10:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:10:06 WARN  : Linker script will not be updated automatically. Users need to update it manually.

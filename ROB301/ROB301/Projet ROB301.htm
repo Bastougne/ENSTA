@@ -1,0 +1,2256 @@
+<HTML>
+<HEAD>
+<TITLE>Projet ROB301</TITLE>
+<STYLE type="text/css">
+.Normal { 
+font-family: Verdana;
+font-size: 11pt;}
+.BodyText { 
+font-family: Verdana;
+font-size: 11pt;}
+.Title { 
+text-align: center;
+font-family: Verdana;
+font-size: 20pt;
+font-weight: bold;
+padding-bottom: 16pt;}
+.Subtitle { 
+text-align: center;
+font-family: Verdana;
+font-size: 16pt;
+font-style: italic;
+padding-bottom: 16pt;}
+.DocumentInfo { 
+font-family: Verdana;
+font-size: 11pt;}
+.ListNumber2 { 
+font-family: Verdana;
+font-size: 11pt;}
+.Heading1 { 
+margin-top: 12pt;
+border-top-style: dotted;page-break-before: always;
+font-family: Verdana;
+font-size: 16pt;
+font-weight: bold;
+padding-top: 12pt;
+padding-bottom: 12pt;}
+.Heading2 { 
+font-family: Verdana;
+font-size: 14pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading3 { 
+font-family: Verdana;
+font-size: 12pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading4 { 
+font-family: Verdana;
+font-size: 11pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.TableCell { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCell { 
+text-align: left;
+vertical-align:middle;
+color: rgb(255,255,255);
+background-color: rgb(0,0,128);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TOC1 { 
+font-family: Verdana;
+font-size: 12pt;
+font-weight: bold;
+padding-top: 12pt;}
+.TOC2 { 
+font-family: Verdana;
+font-size: 12pt;
+padding-left: 0.35cm;
+padding-top: 12pt;}
+.TOC3 { 
+font-family: Verdana;
+font-size: 11pt;
+font-style: italic;
+padding-left: 0.7cm;
+padding-top: 6pt;}
+.TOC4 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1cm;}
+.Header { 
+font-family: Tahoma;
+font-size: 9pt;
+font-weight: bold;}
+.Footer { 
+font-family: Tahoma;
+font-size: 9pt;
+font-weight: bold;}
+.Caption { 
+text-align: center;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 6pt;
+padding-bottom: 12pt;}
+.TableCaption { 
+text-align: left;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-bottom: 6pt;}
+.ListOfFigures { 
+font-family: Verdana;
+font-size: 11pt;
+font-weight: bold;}
+.Hyperlink { 
+color: rgb(0,0,255);
+font-family: Verdana;
+font-size: 11pt;
+text-decoration: underline;}
+.DocumentClass { 
+text-align: center;
+font-family: Verdana;
+font-size: 11pt;}
+.TableCellAnnot { 
+text-align: left;
+vertical-align:middle;
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 0.1cm;
+padding-right: 0.1cm;}
+.TableHeadingCellAnnot { 
+text-align: left;
+vertical-align:middle;
+color: rgb(255,255,255);
+background-color: rgb(0,0,128);
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-left: 0.1cm;}
+.TextualCode { 
+font-family: Courier;
+font-size: 9pt;
+margin-bottom: 12pt;
+border-style: solid;
+border-width: 1pt;
+padding-left: 3pt;
+padding-top: 3pt;
+padding-bottom: 3pt;
+padding-right: 3pt;
+min-width: 160mm;
+width: 80%;
+white-space: nowrap;}
+.EndOfDocument { 
+text-align: center;
+color: rgb(192,192,192);
+font-family: Verdana;
+font-size: 7pt;}
+.ListTitle { 
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;}
+.ListOfTables { 
+font-family: Verdana;
+font-size: 11pt;
+font-weight: bold;}
+.Heading5 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading6 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.Heading7 { 
+font-family: Verdana;
+font-size: 10pt;
+padding-top: 6pt;
+padding-bottom: 6pt;}
+.TOC5 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1.3cm;}
+.TOC6 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 1.6cm;}
+.TOC7 { 
+font-family: Verdana;
+font-size: 9pt;
+padding-left: 2cm;}
+table{
+border:1px solid rgb(0, 0, 0);
+border-spacing: 0px;
+border-collapse: collapse;
+}
+td{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+th{
+border:1px solid rgb(0, 0, 0);
+border-collapse: collapse;
+ min-height: 0.5cm;
+height: 0.5cm;
+}
+</STYLE>
+</HEAD>
+<BODY>
+
+<DIV class="DocumentClass">ROB301 - Mod&#232;le et g&#233;n&#233;ration automatique de code</DIV><HR style="width: 14cm; text-align: center;">
+<DIV class="Title">Projet : Contr&#244;leur de train d'atterrissage d'un avion</DIV>
+<DIV class="Subtitle">&lt;subtitle&gt;</DIV>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<DIV class="DocumentInfo">
+<B>Summary:</B></DIV>
+<DIV style="height:35mm;"><DIV class="DocumentInfo">
+&lt;summary&gt;</DIV>
+</DIV>
+<DIV class="DocumentInfo">
+<B>Company: </B>&lt;company&gt;<BR>
+<B>Authors: </B>&lt;authors&gt;<BR>
+<B>Reference: </B>&lt;reference&gt;<BR>
+<B>Index: </B>&lt;index&gt;<BR>
+<B>Date: </B>&lt;date&gt;</DIV>
+<DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><DIV class="DocumentInfo"></DIV><HR style="width: 17cm; text-align: center;">
+<DIV class="DocumentInfo">
+<B>Distribution List: </B>&lt;distribution list&gt;</DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">Table Of Contents</DIV>
+<DIV class="TOC1">1. <A HREF="#_TOC0">General Project Description</A></DIV>
+<DIV class="TOC1">2. <A HREF="#_TOC1">Software Architecture</A></DIV>
+<DIV class="TOC2">2.1. <A HREF="#_TOC2">Project Architecture</A></DIV>
+<DIV class="TOC2">2.2. <A HREF="#_TOC3">Call Graph</A></DIV>
+<DIV class="TOC1">3. <A HREF="#_TOC4">Projet ROB301 Project</A></DIV>
+<DIV class="TOC2">3.1. <A HREF="#_TOC5">Root Elements</A></DIV>
+<DIV class="TOC3">3.1.1. <A HREF="#_TOC6">AnalogicalSwitchAnomaly1 Operator</A></DIV>
+<DIV class="TOC4">3.1.1.1. <A HREF="#_TOC7">Interface</A></DIV>
+<DIV class="TOC4">3.1.1.2. <A HREF="#_TOC8">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.1.3. <A HREF="#_TOC9">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.2. <A HREF="#_TOC11">AnalogicalSwitchAnomaly2 Operator</A></DIV>
+<DIV class="TOC4">3.1.2.1. <A HREF="#_TOC12">Interface</A></DIV>
+<DIV class="TOC4">3.1.2.2. <A HREF="#_TOC13">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.2.3. <A HREF="#_TOC14">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.3. <A HREF="#_TOC16">Booleans Operator</A></DIV>
+<DIV class="TOC4">3.1.3.1. <A HREF="#_TOC17">Interface</A></DIV>
+<DIV class="TOC4">3.1.3.2. <A HREF="#_TOC18">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.3.3. <A HREF="#_TOC19">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.4. <A HREF="#_TOC21">Counter Operator</A></DIV>
+<DIV class="TOC4">3.1.4.1. <A HREF="#_TOC22">Interface</A></DIV>
+<DIV class="TOC4">3.1.4.2. <A HREF="#_TOC23">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.4.3. <A HREF="#_TOC24">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.5. <A HREF="#_TOC26">CounterReset Operator</A></DIV>
+<DIV class="TOC4">3.1.5.1. <A HREF="#_TOC27">Interface</A></DIV>
+<DIV class="TOC4">3.1.5.2. <A HREF="#_TOC28">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.5.3. <A HREF="#_TOC29">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.6. <A HREF="#_TOC31">DoorMotionAnomaly1 Operator</A></DIV>
+<DIV class="TOC4">3.1.6.1. <A HREF="#_TOC32">Interface</A></DIV>
+<DIV class="TOC4">3.1.6.2. <A HREF="#_TOC33">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.6.3. <A HREF="#_TOC34">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.7. <A HREF="#_TOC36">DoorMotionAnomaly2 Operator</A></DIV>
+<DIV class="TOC4">3.1.7.1. <A HREF="#_TOC37">Interface</A></DIV>
+<DIV class="TOC4">3.1.7.2. <A HREF="#_TOC38">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.7.3. <A HREF="#_TOC39">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.8. <A HREF="#_TOC41">DuplicationSequence Operator</A></DIV>
+<DIV class="TOC4">3.1.8.1. <A HREF="#_TOC42">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.8.2. <A HREF="#_TOC43">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.9. <A HREF="#_TOC45">FallingEdge Operator</A></DIV>
+<DIV class="TOC4">3.1.9.1. <A HREF="#_TOC46">Interface</A></DIV>
+<DIV class="TOC4">3.1.9.2. <A HREF="#_TOC47">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.9.3. <A HREF="#_TOC48">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.10. <A HREF="#_TOC50">GearMotionAnomaly1 Operator</A></DIV>
+<DIV class="TOC4">3.1.10.1. <A HREF="#_TOC51">Interface</A></DIV>
+<DIV class="TOC4">3.1.10.2. <A HREF="#_TOC52">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.10.3. <A HREF="#_TOC53">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.11. <A HREF="#_TOC55">GearMotionAnomaly2 Operator</A></DIV>
+<DIV class="TOC4">3.1.11.1. <A HREF="#_TOC56">Interface</A></DIV>
+<DIV class="TOC4">3.1.11.2. <A HREF="#_TOC57">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.11.3. <A HREF="#_TOC58">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.12. <A HREF="#_TOC60">Global Operator</A></DIV>
+<DIV class="TOC4">3.1.12.1. <A HREF="#_TOC61">Interface</A></DIV>
+<DIV class="TOC4">3.1.12.2. <A HREF="#_TOC62">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.12.3. <A HREF="#_TOC63">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.13. <A HREF="#_TOC65">GlobalMonitoring Operator</A></DIV>
+<DIV class="TOC4">3.1.13.1. <A HREF="#_TOC66">Interface</A></DIV>
+<DIV class="TOC4">3.1.13.2. <A HREF="#_TOC67">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.13.3. <A HREF="#_TOC68">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.14. <A HREF="#_TOC70">PressureAnomaly Operator</A></DIV>
+<DIV class="TOC4">3.1.14.1. <A HREF="#_TOC71">Interface</A></DIV>
+<DIV class="TOC4">3.1.14.2. <A HREF="#_TOC72">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.14.3. <A HREF="#_TOC73">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.15. <A HREF="#_TOC75">RisingEdge Operator</A></DIV>
+<DIV class="TOC4">3.1.15.1. <A HREF="#_TOC76">Interface</A></DIV>
+<DIV class="TOC4">3.1.15.2. <A HREF="#_TOC77">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.15.3. <A HREF="#_TOC78">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.16. <A HREF="#_TOC80">Sequence Operator</A></DIV>
+<DIV class="TOC4">3.1.16.1. <A HREF="#_TOC81">Interface</A></DIV>
+<DIV class="TOC4">3.1.16.2. <A HREF="#_TOC82">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.16.3. <A HREF="#_TOC83">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.17. <A HREF="#_TOC85">test Operator</A></DIV>
+<DIV class="TOC4">3.1.17.1. <A HREF="#_TOC86">Interface</A></DIV>
+<DIV class="TOC4">3.1.17.2. <A HREF="#_TOC87">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.17.3. <A HREF="#_TOC88">Graphical and Textual Diagrams</A></DIV>
+<DIV class="TOC3">3.1.18. <A HREF="#_TOC90">Voter Operator</A></DIV>
+<DIV class="TOC4">3.1.18.1. <A HREF="#_TOC91">Interface</A></DIV>
+<DIV class="TOC4">3.1.18.2. <A HREF="#_TOC92">Operator Hierarchy</A></DIV>
+<DIV class="TOC4">3.1.18.3. <A HREF="#_TOC93">Graphical and Textual Diagrams</A></DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">List Of Figures</DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE1">Figure 1: View of diagram_AnalogicalSwitchAnomaly1_1 (AnalogicalSwitchAnomaly1)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE2">Figure 2: View of diagram_AnalogicalSwitchAnomaly2_1 (AnalogicalSwitchAnomaly2)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE3">Figure 3: View of diagram_Booleans_1 (Booleans)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE4">Figure 4: View of diagram_Counter_1 (Counter)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE5">Figure 5: View of diagram_CounterReset_1 (CounterReset)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE6">Figure 6: View of diagram_DoorMotionAnomaly1_1 (DoorMotionAnomaly1)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE7">Figure 7: View of diagram_DoorMotionAnomaly2_1 (DoorMotionAnomaly2)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE8">Figure 8: View of diagram_DuplicationSequence_1 (DuplicationSequence)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE9">Figure 9: View of diagram_FallingEdge_1 (FallingEdge)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE10">Figure 10: View of diagram_GearMotionAnomaly1_1 (GearMotionAnomaly1)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE11">Figure 11: View of diagram_GearMotionAnomaly2_1 (GearMotionAnomaly2)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE12">Figure 12: View of diagram_Global_1 (Global)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE13">Figure 13: View of diagram_GlobalMonitoring_1 (GlobalMonitoring)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE14">Figure 14: View of diagram_PressureAnomaly_1 (PressureAnomaly)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE15">Figure 15: View of diagram_RisingEdge_1 (RisingEdge)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE16">Figure 16: View of diagram_Sequence_1 (Sequence)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE17">Figure 17: View of diagram_test_1 (test)</A></DIV>
+<DIV class="ListOfFigures"><A HREF="#FIGURE18">Figure 18: View of diagram_Voter_1 (Voter)</A></DIV>
+
+<DIV class="Title" style="margin-top: 12pt; border-top-style: dotted;page-break-before: always; padding-top: 12pt;">List Of Tables</DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE1">Table 1: Inputs of AnalogicalSwitchAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE2">Table 2: Outputs of AnalogicalSwitchAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE3">Table 3: Inputs of AnalogicalSwitchAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE4">Table 4: Outputs of AnalogicalSwitchAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE5">Table 5: Inputs of Booleans</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE6">Table 6: Outputs of Booleans</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE7">Table 7: Outputs of Counter</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE8">Table 8: Inputs of CounterReset</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE9">Table 9: Outputs of CounterReset</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE10">Table 10: Inputs of DoorMotionAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE11">Table 11: Outputs of DoorMotionAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE12">Table 12: Inputs of DoorMotionAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE13">Table 13: Outputs of DoorMotionAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE14">Table 14: Inputs of FallingEdge</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE15">Table 15: Outputs of FallingEdge</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE16">Table 16: Inputs of GearMotionAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE17">Table 17: Outputs of GearMotionAnomaly1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE18">Table 18: Inputs of GearMotionAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE19">Table 19: Outputs of GearMotionAnomaly2</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE20">Table 20: Inputs of Global</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE21">Table 21: Outputs of Global</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE22">Table 22: Inputs of GlobalMonitoring</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE23">Table 23: Outputs of GlobalMonitoring</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE24">Table 24: Inputs of PressureAnomaly</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE25">Table 25: Outputs of PressureAnomaly</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE26">Table 26: Inputs of RisingEdge</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE27">Table 27: Outputs of RisingEdge</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE28">Table 28: Inputs of Sequence</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE29">Table 29: Outputs of Sequence</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE30">Table 30: State Machines of diagram_Sequence_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE31">Table 31: States of diagram_Sequence_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE32">Table 32: Transitions of diagram_Sequence_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE33">Table 33: Outputs of test</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE34">Table 34: State Machines of diagram_test_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE35">Table 35: States of diagram_test_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE36">Table 36: Transitions of diagram_test_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE37">Table 37: Inputs of Voter</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE38">Table 38: Outputs of Voter</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE39">Table 39: State Machines of diagram_Voter_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE40">Table 40: States of diagram_Voter_1</A></DIV>
+<DIV class="ListOfTables"><A HREF="#TABLE41">Table 41: Transitions of diagram_Voter_1</A></DIV>
+
+<DIV class="Heading1">1. <A NAME="_TOC0">General Project Description</A></DIV>
+<DIV class="BodyText">&lt;description&gt;</DIV>
+<DIV class="Heading1">2. <A NAME="_TOC1">Software Architecture</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<DIV class="Heading2">2.1. <A NAME="_TOC2">Project Architecture</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">This section displays the package hierarchy of projects.</DIV>Project <A class="Hyperlink" HREF="#LinkM-Projet ROB301">Projet ROB301</A>
+</DIV>
+
+<DIV class="Heading2">2.2. <A NAME="_TOC3">Call Graph</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">This Call Graph displays the dependency tree of model operators.</DIV><DIV class="BodyText" style="padding-bottom: 12pt;">
+1. <A class="Hyperlink" HREF="#LinkS-!ed/5506/7A28/B38/5e3c3db43721">DuplicationSequence</A><BR>
+2. <A class="Hyperlink" HREF="#LinkS-!ed/522a/7A28/B38/5e3c31205f7">Global</A>
+<BR>
+ &nbsp; &nbsp; 2.1. <A class="Hyperlink" HREF="#LinkS-!ed/4b39/7A28/B38/5e3c03a94284">GlobalMonitoring</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.1. <A class="Hyperlink" HREF="#LinkS-!ed/4585/A02/4D0/5e3810ec8b0">AnalogicalSwitchAnomaly1</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.1.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.1.2. <A class="Hyperlink" HREF="#LinkS-!ed/4535/177F/948/5e2ee7b066ce">FallingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.1.3. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.2. <A class="Hyperlink" HREF="#LinkS-!ed/4b82/A02/4D0/5e3824d5485b">AnalogicalSwitchAnomaly2</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.2.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.2.2. <A class="Hyperlink" HREF="#LinkS-!ed/4535/177F/948/5e2ee7b066ce">FallingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.2.3. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.3. <A class="Hyperlink" HREF="#LinkS-!ed/5d45/A02/4D0/5e384d361aa8">Booleans</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.4. <A class="Hyperlink" HREF="#LinkS-!ed/576b/A02/4D0/5e383cec6378">DoorMotionAnomaly1</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.4.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.4.2. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.5. <A class="Hyperlink" HREF="#LinkS-!ed/58e5/A02/4D0/5e38444e2df4">DoorMotionAnomaly2</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.5.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.5.2. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.6. <A class="Hyperlink" HREF="#LinkS-!ed/5a2b/A02/4D0/5e3847904a67">GearMotionAnomaly1</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.6.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.6.2. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.7. <A class="Hyperlink" HREF="#LinkS-!ed/5ac5/A02/4D0/5e3848b33d89">GearMotionAnomaly2</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.7.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.7.2. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.8. <A class="Hyperlink" HREF="#LinkS-!ed/5b83/A02/4D0/5e38498f44b8">PressureAnomaly</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.8.1. <A class="Hyperlink" HREF="#LinkS-!ed/47f5/177F/948/5e2ef337175">CounterReset</A> [2]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.8.2. <A class="Hyperlink" HREF="#LinkS-!ed/4535/177F/948/5e2ee7b066ce">FallingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.8.3. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.9. <A class="Hyperlink" HREF="#LinkS-!ed/48b4/177F/948/5e2efc354f03">Sequence</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.9.1. <A class="Hyperlink" HREF="#LinkS-!ed/4531/177F/948/5e2ee77b1145">Counter</A> [15]
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.9.2. <A class="Hyperlink" HREF="#LinkS-!ed/4535/177F/948/5e2ee7b066ce">FallingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2.1.9.3. <A class="Hyperlink" HREF="#LinkS-!ed/4533/177F/948/5e2ee78c3f15">RisingEdge</A>
+<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.1.10. <A class="Hyperlink" HREF="#LinkS-!ed/43ce/177F/948/5e2ee08f316b">Voter</A> [18]<BR>
+3. <A class="Hyperlink" HREF="#LinkS-!ed/4671/2DFA/F3C/5e3818fe4cbc">test</A>
+<BR>
+ &nbsp; &nbsp; 3.1. <A class="Hyperlink" HREF="#LinkS-!ed/4531/177F/948/5e2ee77b1145">Counter</A></DIV>
+<A NAME='LinkM-Projet ROB301'></A><DIV class="Heading1">3. <A NAME="_TOC4">Projet ROB301 Project</A></DIV>
+<DIV class="Heading2">3.1. <A NAME="_TOC5">Root Elements</A></DIV>
+
+
+<A NAME='LinkS-!ed/4585/A02/4D0/5e3810ec8b0'></A><DIV class="Heading3">3.1.1. <A NAME="_TOC6">AnalogicalSwitchAnomaly1 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.1.1.   <A NAME="_TOC7">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE1">1</A>: Inputs of AnalogicalSwitchAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE2">2</A>: Outputs of AnalogicalSwitchAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.1.2.   <A NAME="_TOC8">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4586/A02/4D0/5e3810ecbe8">diagram_AnalogicalSwitchAnomaly1_1</A></DIV>
+
+<DIV class="Heading4">3.1.1.3.   <A NAME="_TOC9">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4586/A02/4D0/5e3810ecbe8'></A><DIV class="Heading5">3.1.1.3.1.   <A NAME="_TOC10">View of diagram_AnalogicalSwitchAnomaly1_1 (AnalogicalSwitchAnomaly1)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_1_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE1">1</A>: View of diagram_AnalogicalSwitchAnomaly1_1 (AnalogicalSwitchAnomaly1)</DIV>
+
+<A NAME='LinkS-!ed/4b82/A02/4D0/5e3824d5485b'></A><DIV class="Heading3">3.1.2. <A NAME="_TOC11">AnalogicalSwitchAnomaly2 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.2.1.   <A NAME="_TOC12">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE3">3</A>: Inputs of AnalogicalSwitchAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE4">4</A>: Outputs of AnalogicalSwitchAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.2.2.   <A NAME="_TOC13">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4b83/A02/4D0/5e3824d5524a">diagram_AnalogicalSwitchAnomaly2_1</A></DIV>
+
+<DIV class="Heading4">3.1.2.3.   <A NAME="_TOC14">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4b83/A02/4D0/5e3824d5524a'></A><DIV class="Heading5">3.1.2.3.1.   <A NAME="_TOC15">View of diagram_AnalogicalSwitchAnomaly2_1 (AnalogicalSwitchAnomaly2)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_2_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE2">2</A>: View of diagram_AnalogicalSwitchAnomaly2_1 (AnalogicalSwitchAnomaly2)</DIV>
+
+<A NAME='LinkS-!ed/5d45/A02/4D0/5e384d361aa8'></A><DIV class="Heading3">3.1.3. <A NAME="_TOC16">Booleans Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.3.1.   <A NAME="_TOC17">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE5">5</A>: Inputs of Booleans</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE6">6</A>: Outputs of Booleans</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gears_locked_down</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gears_maneuvering</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.3.2.   <A NAME="_TOC18">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5d46/A02/4D0/5e384d367e36">diagram_Booleans_1</A></DIV>
+
+<DIV class="Heading4">3.1.3.3.   <A NAME="_TOC19">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5d46/A02/4D0/5e384d367e36'></A><DIV class="Heading5">3.1.3.3.1.   <A NAME="_TOC20">View of diagram_Booleans_1 (Booleans)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_3_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE3">3</A>: View of diagram_Booleans_1 (Booleans)</DIV>
+
+<A NAME='LinkS-!ed/4531/177F/948/5e2ee77b1145'></A><DIV class="Heading3">3.1.4. <A NAME="_TOC21">Counter Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.4.1.   <A NAME="_TOC22">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE7">7</A>: Outputs of Counter</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.4.2.   <A NAME="_TOC23">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4532/177F/948/5e2ee77b7911">diagram_Counter_1</A></DIV>
+
+<DIV class="Heading4">3.1.4.3.   <A NAME="_TOC24">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4532/177F/948/5e2ee77b7911'></A><DIV class="Heading5">3.1.4.3.1.   <A NAME="_TOC25">View of diagram_Counter_1 (Counter)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_4_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE4">4</A>: View of diagram_Counter_1 (Counter)</DIV>
+
+<A NAME='LinkS-!ed/47f5/177F/948/5e2ef337175'></A><DIV class="Heading3">3.1.5. <A NAME="_TOC26">CounterReset Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.5.1.   <A NAME="_TOC27">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE8">8</A>: Inputs of CounterReset</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">go</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE9">9</A>: Outputs of CounterReset</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.5.2.   <A NAME="_TOC28">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/47f6/177F/948/5e2ef3377232">diagram_CounterReset_1</A></DIV>
+
+<DIV class="Heading4">3.1.5.3.   <A NAME="_TOC29">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/47f6/177F/948/5e2ef3377232'></A><DIV class="Heading5">3.1.5.3.1.   <A NAME="_TOC30">View of diagram_CounterReset_1 (CounterReset)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_5_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE5">5</A>: View of diagram_CounterReset_1 (CounterReset)</DIV>
+
+<A NAME='LinkS-!ed/576b/A02/4D0/5e383cec6378'></A><DIV class="Heading3">3.1.6. <A NAME="_TOC31">DoorMotionAnomaly1 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.6.1.   <A NAME="_TOC32">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE10">10</A>: Inputs of DoorMotionAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE11">11</A>: Outputs of DoorMotionAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.6.2.   <A NAME="_TOC33">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/576c/A02/4D0/5e383cec7327">diagram_DoorMotionAnomaly1_1</A></DIV>
+
+<DIV class="Heading4">3.1.6.3.   <A NAME="_TOC34">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/576c/A02/4D0/5e383cec7327'></A><DIV class="Heading5">3.1.6.3.1.   <A NAME="_TOC35">View of diagram_DoorMotionAnomaly1_1 (DoorMotionAnomaly1)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_6_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE6">6</A>: View of diagram_DoorMotionAnomaly1_1 (DoorMotionAnomaly1)</DIV>
+
+<A NAME='LinkS-!ed/58e5/A02/4D0/5e38444e2df4'></A><DIV class="Heading3">3.1.7. <A NAME="_TOC36">DoorMotionAnomaly2 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.7.1.   <A NAME="_TOC37">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE12">12</A>: Inputs of DoorMotionAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE13">13</A>: Outputs of DoorMotionAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.7.2.   <A NAME="_TOC38">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/58e6/A02/4D0/5e38444e3e56">diagram_DoorMotionAnomaly2_1</A></DIV>
+
+<DIV class="Heading4">3.1.7.3.   <A NAME="_TOC39">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/58e6/A02/4D0/5e38444e3e56'></A><DIV class="Heading5">3.1.7.3.1.   <A NAME="_TOC40">View of diagram_DoorMotionAnomaly2_1 (DoorMotionAnomaly2)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_7_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE7">7</A>: View of diagram_DoorMotionAnomaly2_1 (DoorMotionAnomaly2)</DIV>
+
+<A NAME='LinkS-!ed/5506/7A28/B38/5e3c3db43721'></A><DIV class="Heading3">3.1.8. <A NAME="_TOC41">DuplicationSequence Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+<DIV class="Heading4">3.1.8.1.   <A NAME="_TOC42">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5507/7A28/B38/5e3c3db47914">diagram_DuplicationSequence_1</A></DIV>
+
+<DIV class="Heading4">3.1.8.2.   <A NAME="_TOC43">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5507/7A28/B38/5e3c3db47914'></A><DIV class="Heading5">3.1.8.2.1.   <A NAME="_TOC44">View of diagram_DuplicationSequence_1 (DuplicationSequence)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_8_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE8">8</A>: View of diagram_DuplicationSequence_1 (DuplicationSequence)</DIV>
+
+<A NAME='LinkS-!ed/4535/177F/948/5e2ee7b066ce'></A><DIV class="Heading3">3.1.9. <A NAME="_TOC45">FallingEdge Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.9.1.   <A NAME="_TOC46">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE14">14</A>: Inputs of FallingEdge</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">x</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE15">15</A>: Outputs of FallingEdge</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">y</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.9.2.   <A NAME="_TOC47">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4536/177F/948/5e2ee7b02763">diagram_FallingEdge_1</A></DIV>
+
+<DIV class="Heading4">3.1.9.3.   <A NAME="_TOC48">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4536/177F/948/5e2ee7b02763'></A><DIV class="Heading5">3.1.9.3.1.   <A NAME="_TOC49">View of diagram_FallingEdge_1 (FallingEdge)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_9_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE9">9</A>: View of diagram_FallingEdge_1 (FallingEdge)</DIV>
+
+<A NAME='LinkS-!ed/5a2b/A02/4D0/5e3847904a67'></A><DIV class="Heading3">3.1.10. <A NAME="_TOC50">GearMotionAnomaly1 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.10.1.   <A NAME="_TOC51">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE16">16</A>: Inputs of GearMotionAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE17">17</A>: Outputs of GearMotionAnomaly1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.10.2.   <A NAME="_TOC52">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5a2c/A02/4D0/5e3847905b9f">diagram_GearMotionAnomaly1_1</A></DIV>
+
+<DIV class="Heading4">3.1.10.3.   <A NAME="_TOC53">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5a2c/A02/4D0/5e3847905b9f'></A><DIV class="Heading5">3.1.10.3.1.   <A NAME="_TOC54">View of diagram_GearMotionAnomaly1_1 (GearMotionAnomaly1)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_10_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE10">10</A>: View of diagram_GearMotionAnomaly1_1 (GearMotionAnomaly1)</DIV>
+
+<A NAME='LinkS-!ed/5ac5/A02/4D0/5e3848b33d89'></A><DIV class="Heading3">3.1.11. <A NAME="_TOC55">GearMotionAnomaly2 Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.11.1.   <A NAME="_TOC56">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE18">18</A>: Inputs of GearMotionAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE19">19</A>: Outputs of GearMotionAnomaly2</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.11.2.   <A NAME="_TOC57">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5ac6/A02/4D0/5e3848b33a9c">diagram_GearMotionAnomaly2_1</A></DIV>
+
+<DIV class="Heading4">3.1.11.3.   <A NAME="_TOC58">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5ac6/A02/4D0/5e3848b33a9c'></A><DIV class="Heading5">3.1.11.3.1.   <A NAME="_TOC59">View of diagram_GearMotionAnomaly2_1 (GearMotionAnomaly2)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_11_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE11">11</A>: View of diagram_GearMotionAnomaly2_1 (GearMotionAnomaly2)</DIV>
+
+<A NAME='LinkS-!ed/522a/7A28/B38/5e3c31205f7'></A><DIV class="Heading3">3.1.12. <A NAME="_TOC60">Global Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.12.1.   <A NAME="_TOC61">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE20">20</A>: Inputs of Global</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE21">21</A>: Outputs of Global</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gears_locked_down</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gears_maneuvring</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">outgoing</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retracting</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.12.2.   <A NAME="_TOC62">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/522b/7A28/B38/5e3c31206159">diagram_Global_1</A></DIV>
+
+<DIV class="Heading4">3.1.12.3.   <A NAME="_TOC63">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/522b/7A28/B38/5e3c31206159'></A><DIV class="Heading5">3.1.12.3.1.   <A NAME="_TOC64">View of diagram_Global_1 (Global)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_12_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE12">12</A>: View of diagram_Global_1 (Global)</DIV>
+
+<A NAME='LinkS-!ed/4b39/7A28/B38/5e3c03a94284'></A><DIV class="Heading3">3.1.13. <A NAME="_TOC65">GlobalMonitoring Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.13.1.   <A NAME="_TOC66">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE22">22</A>: Inputs of GlobalMonitoring</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">handle_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">analogical_switch_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized_3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE23">23</A>: Outputs of GlobalMonitoring</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">gears_locked_down</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gears_maneuvring</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">outgoing</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retracting</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.13.2.   <A NAME="_TOC67">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4b3a/7A28/B38/5e3c03a96a7c">diagram_GlobalMonitoring_1</A></DIV>
+
+<DIV class="Heading4">3.1.13.3.   <A NAME="_TOC68">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4b3a/7A28/B38/5e3c03a96a7c'></A><DIV class="Heading5">3.1.13.3.1.   <A NAME="_TOC69">View of diagram_GlobalMonitoring_1 (GlobalMonitoring)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_13_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE13">13</A>: View of diagram_GlobalMonitoring_1 (GlobalMonitoring)</DIV>
+
+<A NAME='LinkS-!ed/5b83/A02/4D0/5e38498f44b8'></A><DIV class="Heading3">3.1.14. <A NAME="_TOC70">PressureAnomaly Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.14.1.   <A NAME="_TOC71">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE24">24</A>: Inputs of PressureAnomaly</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">circuit_pressurized</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE25">25</A>: Outputs of PressureAnomaly</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.14.2.   <A NAME="_TOC72">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/5b84/A02/4D0/5e38498f701f">diagram_PressureAnomaly_1</A></DIV>
+
+<DIV class="Heading4">3.1.14.3.   <A NAME="_TOC73">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/5b84/A02/4D0/5e38498f701f'></A><DIV class="Heading5">3.1.14.3.1.   <A NAME="_TOC74">View of diagram_PressureAnomaly_1 (PressureAnomaly)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_14_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE14">14</A>: View of diagram_PressureAnomaly_1 (PressureAnomaly)</DIV>
+
+<A NAME='LinkS-!ed/4533/177F/948/5e2ee78c3f15'></A><DIV class="Heading3">3.1.15. <A NAME="_TOC75">RisingEdge Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.15.1.   <A NAME="_TOC76">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE26">26</A>: Inputs of RisingEdge</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">x</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE27">27</A>: Outputs of RisingEdge</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">y</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.15.2.   <A NAME="_TOC77">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4534/177F/948/5e2ee78c1780">diagram_RisingEdge_1</A></DIV>
+
+<DIV class="Heading4">3.1.15.3.   <A NAME="_TOC78">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4534/177F/948/5e2ee78c1780'></A><DIV class="Heading5">3.1.15.3.1.   <A NAME="_TOC79">View of diagram_RisingEdge_1 (RisingEdge)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_15_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE15">15</A>: View of diagram_RisingEdge_1 (RisingEdge)</DIV>
+
+<A NAME='LinkS-!ed/48b4/177F/948/5e2efc354f03'></A><DIV class="Heading3">3.1.16. <A NAME="_TOC80">Sequence Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.16.1.   <A NAME="_TOC81">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE28">28</A>: Inputs of Sequence</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">handle</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_extended_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_closed_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_shock_absorber_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">gear_retracted_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_front</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_right</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">door_open_left</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">anomaly</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE29">29</A>: Outputs of Sequence</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">general_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">close_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">open_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retract_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">extend_EV</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">retracting</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">outgoing</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.16.2.   <A NAME="_TOC82">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/48b5/177F/948/5e2efc3571b5">diagram_Sequence_1</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/48b5/177F/948/5e2efc3571b5">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Anomaly<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : IDLE<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate2<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate3<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate4<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate5<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate6<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate7<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate8<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Intermediate9<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing2<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing3<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing4<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing5<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Outgoing6<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retracting1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retracting2<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retracting3<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retraction4<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retraction5<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Retraction6</DIV>
+
+<DIV class="Heading4">3.1.16.3.   <A NAME="_TOC83">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/48b5/177F/948/5e2efc3571b5'></A><DIV class="Heading5">3.1.16.3.1.   <A NAME="_TOC84">View of diagram_Sequence_1 (Sequence)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_16_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE16">16</A>: View of diagram_Sequence_1 (Sequence)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE30">30</A>: State Machines of diagram_Sequence_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE31">31</A>: States of diagram_Sequence_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:Anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:IDLE</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate4</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate5</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate6</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate7</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate8</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Intermediate9</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing4</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing5</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Outgoing6</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retracting1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retracting2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retracting3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retraction4</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retraction5</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Retraction6</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE32">32</A>: Transitions of diagram_Sequence_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:IDLE<BR>
+<B>Target:</B><BR>
+SM1:Outgoing1</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+outgoing<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:IDLE<BR>
+<B>Target:</B><BR>
+SM1:Retracting1</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:IDLE<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate1<BR>
+<B>Target:</B><BR>
+SM1:Retracting2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate1<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate2<BR>
+<B>Target:</B><BR>
+SM1:Retracting2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate2<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate3<BR>
+<B>Target:</B><BR>
+SM1:Outgoing5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate3<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate4<BR>
+<B>Target:</B><BR>
+SM1:Outgoing3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate4<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate5<BR>
+<B>Target:</B><BR>
+SM1:Outgoing3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate5<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate6<BR>
+<B>Target:</B><BR>
+SM1:Retracting3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate6<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate7<BR>
+<B>Target:</B><BR>
+SM1:Retracting3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate7<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate8<BR>
+<B>Target:</B><BR>
+SM1:Outgoing2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate8<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate9<BR>
+<B>Target:</B><BR>
+SM1:Retraction5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Intermediate9<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing1<BR>
+<B>Target:</B><BR>
+SM1:Outgoing2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 200<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing1<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing2<BR>
+<B>Target:</B><BR>
+SM1:Outgoing3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+door_open_front and door_open_right and door_open_left<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing2<BR>
+<B>Target:</B><BR>
+SM1:Intermediate9</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing2<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing3<BR>
+<B>Target:</B><BR>
+SM1:Outgoing4</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+gear_extended_front and gear_extended_right and gear_extended_left<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing3<BR>
+<B>Target:</B><BR>
+SM1:Intermediate7</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing3<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing4<BR>
+<B>Target:</B><BR>
+SM1:Outgoing5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing4<BR>
+<B>Target:</B><BR>
+SM1:Intermediate6</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing4<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing5<BR>
+<B>Target:</B><BR>
+SM1:Outgoing6</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+door_closed_front and door_closed_right and door_closed_left<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing5<BR>
+<B>Target:</B><BR>
+SM1:Intermediate2</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing5<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing6<BR>
+<B>Target:</B><BR>
+SM1:IDLE</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 1000</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing6<BR>
+<B>Target:</B><BR>
+SM1:Intermediate1</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+retracting</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Outgoing6<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting1<BR>
+<B>Target:</B><BR>
+SM1:IDLE</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting1<BR>
+<B>Target:</B><BR>
+SM1:Retracting2</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 200</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting1<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting2<BR>
+<B>Target:</B><BR>
+SM1:Intermediate3</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+door_open_front and door_open_right and door_open_left and gear_shock_absorber_front and gear_shock_absorber_right and gear_shock_absorber_left or outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting2<BR>
+<B>Target:</B><BR>
+SM1:Retracting3</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+door_open_front and door_open_right and door_open_left and &nbsp;not gear_shock_absorber_front and &nbsp;not gear_shock_absorber_right and &nbsp;not gear_shock_absorber_left</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting2<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting3<BR>
+<B>Target:</B><BR>
+SM1:Intermediate4</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting3<BR>
+<B>Target:</B><BR>
+SM1:Retraction4</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+gear_retracted_front and gear_retracted_right and gear_retracted_left</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retracting3<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction4<BR>
+<B>Target:</B><BR>
+SM1:Intermediate5</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction4<BR>
+<B>Target:</B><BR>
+SM1:Retraction5</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction4<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction5<BR>
+<B>Target:</B><BR>
+SM1:Intermediate8</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction5<BR>
+<B>Target:</B><BR>
+SM1:Retraction6</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+door_closed_front and door_closed_right and door_closed_left</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction5<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction6<BR>
+<B>Target:</B><BR>
+SM1:Outgoing2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 100 and outgoing</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction6<BR>
+<B>Target:</B><BR>
+SM1:IDLE</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 1000</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Retraction6<BR>
+<B>Target:</B><BR>
+SM1:Anomaly</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+anomaly</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/4671/2DFA/F3C/5e3818fe4cbc'></A><DIV class="Heading3">3.1.17. <A NAME="_TOC85">test Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.17.1.   <A NAME="_TOC86">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE33">33</A>: Outputs of test</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">c</TD>
+<TD class="TableCell">int32</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">x</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.17.2.   <A NAME="_TOC87">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/4672/2DFA/F3C/5e3818fe21cf">diagram_test_1</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/4672/2DFA/F3C/5e3818fe21cf">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : State2</DIV>
+
+<DIV class="Heading4">3.1.17.3.   <A NAME="_TOC88">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/4672/2DFA/F3C/5e3818fe21cf'></A><DIV class="Heading5">3.1.17.3.1.   <A NAME="_TOC89">View of diagram_test_1 (test)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_17_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE17">17</A>: View of diagram_test_1 (test)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE34">34</A>: State Machines of diagram_test_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE35">35</A>: States of diagram_test_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:State1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:State2</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE36">36</A>: Transitions of diagram_test_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State1<BR>
+<B>Target:</B><BR>
+SM1:State2</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+c = 50<BR>
+<B>Actions:</B><BR>
+</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:State2<BR>
+<B>Target:</B><BR>
+SM1:State1</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+x</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+
+<A NAME='LinkS-!ed/43ce/177F/948/5e2ee08f316b'></A><DIV class="Heading3">3.1.18. <A NAME="_TOC90">Voter Operator</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+Declared as <SPAN class="BodyText" style="font-family: Courier; font-size: 12pt; font-weight: bold; padding-bottom: 12pt;">public node</SPAN></DIV>
+
+<DIV class="Heading4">3.1.18.1.   <A NAME="_TOC91">Interface</A></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE37">37</A>: Inputs of Voter</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">sensor1</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">sensor2</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">sensor3</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE38">38</A>: Outputs of Voter</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 40mm;">Name</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Type</TH>
+<TH class="TableHeadingCell" style="width: 80mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">result</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">error</TD>
+<TD class="TableCell">bool</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="Heading4">3.1.18.2.   <A NAME="_TOC92">Operator Hierarchy</A></DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;">
+<U>diagram</U> : <A class="Hyperlink" HREF="#LinkS-!ed/43cf/177F/948/5e2ee08f11f6">diagram_Voter_1</A><BR>
+<I> &nbsp; &nbsp; &nbsp;state-machine</I> : <A class="Hyperlink" HREF="#LinkS-!ed/43cf/177F/948/5e2ee08f11f6">SM1</A><BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : AllDiff<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : AllSame<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Diff1<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Diff2<BR>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;state : Diff3</DIV>
+
+<DIV class="Heading4">3.1.18.3.   <A NAME="_TOC93">Graphical and Textual Diagrams</A></DIV>
+<A NAME='LinkS-!ed/43cf/177F/948/5e2ee08f11f6'></A><DIV class="Heading5">3.1.18.3.1.   <A NAME="_TOC94">View of diagram_Voter_1 (Voter)</A></DIV>
+<DIV class="BodyText" style="text-align: center;"><IMG SRC='Projet ROB301_img/Figure_18_diag.png'></DIV>
+<DIV class="Caption">Figure <A NAME="FIGURE18">18</A>: View of diagram_Voter_1 (Voter)</DIV>
+
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE39">39</A>: State Machines of diagram_Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 50mm;">State Machine</TH>
+<TH class="TableHeadingCell" style="width: 110mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1</TD>
+<TD class="TableCell" style=""></TD>
+</TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE40">40</A>: States of diagram_Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 70mm;">State</TH>
+<TH class="TableHeadingCell" style="width: 90mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell">SM1:AllDiff</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:AllSame</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Diff1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Diff2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell">SM1:Diff3</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="TableCaption">Table&nbsp;<A NAME="TABLE41">41</A>: Transitions of diagram_Voter_1</DIV>
+<DIV class="BodyText" style="padding-bottom: 12pt;"><TABLE ><TBODY>
+<TR><TH class="TableHeadingCell" style="width: 60mm;">Source/Target</TH>
+<TH class="TableHeadingCell" style="width: 5mm;">#</TH>
+<TH class="TableHeadingCell" style="width: 40mm;">Conditions/Actions</TH>
+<TH class="TableHeadingCell" style="width: 55mm;">Comments and Information</TH>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:AllSame<BR>
+<B>Target:</B><BR>
+SM1:Diff1</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor2 = sensor3 and sensor1 &lt;&gt; sensor2</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:AllSame<BR>
+<B>Target:</B><BR>
+SM1:Diff2</TD>
+<TD class="TableCell">2</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor1 = sensor3 and sensor2 &lt;&gt; sensor1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:AllSame<BR>
+<B>Target:</B><BR>
+SM1:Diff3</TD>
+<TD class="TableCell">3</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor1 = sensor2 and sensor3 &lt;&gt; sensor1</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Diff1<BR>
+<B>Target:</B><BR>
+SM1:AllDiff</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor2 &lt;&gt; sensor3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Diff2<BR>
+<B>Target:</B><BR>
+SM1:AllDiff</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor1 &lt;&gt; sensor3</TD>
+<TD class="TableCell" style=""></TD>
+</TR><TR><TD class="TableCell" style=""><B>Source:</B><BR>
+SM1:Diff3<BR>
+<B>Target:</B><BR>
+SM1:AllDiff</TD>
+<TD class="TableCell">1</TD>
+<TD class="TableCell" style=""><B>Condition:</B><BR>
+sensor1 &lt;&gt; sensor2</TD>
+<TD class="TableCell" style=""></TD>
+</TR></TBODY></TABLE></DIV>
+<DIV class="EndOfDocument">End of document.</DIV>
+</BODY>
+</HTML>
+

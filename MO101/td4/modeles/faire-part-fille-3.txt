@@ -1,0 +1,6 @@
+Coucou c’est moi !
+Je m'appelle <PRENOM>
+Et de mes <TAILLE>cm et <POIDS>kg
+Je ravis déjà mes parents !
+Ils m’ont découverte le <DATE>
+Et depuis sont chaque jour enchantés !

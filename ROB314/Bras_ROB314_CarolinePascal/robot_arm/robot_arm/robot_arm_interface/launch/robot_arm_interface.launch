@@ -1,0 +1,13 @@
+  <launch>
+
+      <!-- Launch the dynamixel controllers -->
+    <include file="$(find dynamixel_workbench_controllers)/launch/dynamixel_controllers.launch">
+    </include>
+
+    <!-- Launch the moveit configuration-->
+    <include file="$(find robot_arm_moveit_config_new)/launch/grab.launch">
+    </include>
+    
+    <!-- rosrun robot_arm_interface robot_arm_interface_node must be run manually when moveit is launched !-->
+
+  </launch>

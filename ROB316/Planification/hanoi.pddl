@@ -1,0 +1,10 @@
+(define (problem HANOI-EX7)
+(:domain HANOI)
+(:objects Pic1 Pic2 Pic3 A B C D E)
+(:INIT
+	(disque A) (disque B) (disque C) (disque D) (disque E) (pic Pic1) (pic Pic2) (pic Pic3)
+	(plus-grand E D) (plus-grand D C) (plus-grand C B) (plus-grand B A)
+	(rien-sur A) (sur-disque A B) (sur-disque B C) (sur-disque C D) (sur-pic D Pic1)
+	(rien-sur Pic2) (rien-sur Pic3) (main-vide))
+(:goal (AND (rien-sur A) (sur-disque A B) (sur-disque B C) (sur-disque C D) (sur-pic D Pic3)))
+)

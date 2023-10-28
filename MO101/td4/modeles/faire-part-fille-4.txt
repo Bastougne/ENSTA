@@ -1,0 +1,5 @@
+<PRENOM>
+est née le <DATE>.
+Son regard pétillant et espiègle
+et son grand sourire ravageur
+nous font fondre de bonheur !

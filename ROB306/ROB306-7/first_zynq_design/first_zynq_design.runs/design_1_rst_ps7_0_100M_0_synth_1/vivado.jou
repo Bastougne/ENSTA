@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Sep 15 15:46:45 2022
+# Process ID: 115999
+# Current directory: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/design_1_rst_ps7_0_100M_0_synth_1
+# Command line: vivado -log design_1_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rst_ps7_0_100M_0.tcl
+# Log file: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/design_1_rst_ps7_0_100M_0_synth_1/design_1_rst_ps7_0_100M_0.vds
+# Journal file: /home/bastien/Bureau/ENSTA/ROB306/ROB306-7/first_zynq_design/first_zynq_design.runs/design_1_rst_ps7_0_100M_0_synth_1/vivado.jou
+# Running On: bastien-HP-Pavilion-Gaming-Laptop-17-cd1xxx, OS: Linux, CPU Frequency: 3504.699 MHz, CPU Physical cores: 6, Host memory: 16568 MB
+#-----------------------------------------------------------
+source design_1_rst_ps7_0_100M_0.tcl -notrace

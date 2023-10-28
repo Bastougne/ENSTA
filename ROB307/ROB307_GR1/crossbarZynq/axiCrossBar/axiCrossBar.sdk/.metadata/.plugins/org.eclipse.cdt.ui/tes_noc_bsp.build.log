@@ -1,0 +1,754 @@
+00:16:30 **** Auto Build of project tes_noc_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling bram"
+xbram_g.c:46:3: error: 'XPAR_AXI_BRAM_CTRL_3_DEVICE_ID' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:47:3: error: 'XPAR_AXI_BRAM_CTRL_3_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:48:3: error: 'XPAR_AXI_BRAM_CTRL_3_ECC' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:49:3: error: 'XPAR_AXI_BRAM_CTRL_3_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:50:3: error: 'XPAR_AXI_BRAM_CTRL_3_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:52:3: error: 'XPAR_AXI_BRAM_CTRL_3_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:54:3: error: 'XPAR_AXI_BRAM_CTRL_3_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:55:3: error: 'XPAR_AXI_BRAM_CTRL_3_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:56:3: error: 'XPAR_AXI_BRAM_CTRL_3_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:57:3: error: 'XPAR_AXI_BRAM_CTRL_3_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:58:3: error: 'XPAR_AXI_BRAM_CTRL_3_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:59:3: error: 'XPAR_AXI_BRAM_CTRL_3_S_AXI_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_S_AXI_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:60:3: error: 'XPAR_AXI_BRAM_CTRL_3_S_AXI_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_S_AXI_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:61:3: error: 'XPAR_AXI_BRAM_CTRL_3_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:62:3: error: 'XPAR_AXI_BRAM_CTRL_3_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_3_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:63:2: warning: missing initializer for field 'EccStatusInterruptPresent' of 'XBram_Config' {aka 'struct <anonymous>'} [-Wmissing-field-initializers]
+  },
+  ^
+In file included from xbram_g.c:37:
+xbram.h:161:6: note: 'EccStatusInterruptPresent' declared here
+  int EccStatusInterruptPresent;    /**< Are ECC status and interrupts
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:65:3: error: 'XPAR_AXI_BRAM_CTRL_4_DEVICE_ID' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:66:3: error: 'XPAR_AXI_BRAM_CTRL_4_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:67:3: error: 'XPAR_AXI_BRAM_CTRL_4_ECC' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:68:3: error: 'XPAR_AXI_BRAM_CTRL_4_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:69:3: error: 'XPAR_AXI_BRAM_CTRL_4_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:71:3: error: 'XPAR_AXI_BRAM_CTRL_4_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:73:3: error: 'XPAR_AXI_BRAM_CTRL_4_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:74:3: error: 'XPAR_AXI_BRAM_CTRL_4_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:75:3: error: 'XPAR_AXI_BRAM_CTRL_4_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:76:3: error: 'XPAR_AXI_BRAM_CTRL_4_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:77:3: error: 'XPAR_AXI_BRAM_CTRL_4_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:78:3: error: 'XPAR_AXI_BRAM_CTRL_4_S_AXI_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_S_AXI_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:79:3: error: 'XPAR_AXI_BRAM_CTRL_4_S_AXI_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_S_AXI_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:80:3: error: 'XPAR_AXI_BRAM_CTRL_4_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:81:3: error: 'XPAR_AXI_BRAM_CTRL_4_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_4_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:82:2: warning: missing initializer for field 'EccStatusInterruptPresent' of 'XBram_Config' {aka 'struct <anonymous>'} [-Wmissing-field-initializers]
+  },
+  ^
+In file included from xbram_g.c:37:
+xbram.h:161:6: note: 'EccStatusInterruptPresent' declared here
+  int EccStatusInterruptPresent;    /**< Are ECC status and interrupts
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:84:3: error: 'XPAR_AXI_BRAM_CTRL_5_DEVICE_ID' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:85:3: error: 'XPAR_AXI_BRAM_CTRL_5_DATA_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_DATA_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:86:3: error: 'XPAR_AXI_BRAM_CTRL_5_ECC' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_ECC,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:87:3: error: 'XPAR_AXI_BRAM_CTRL_5_FAULT_INJECT' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_FAULT_INJECT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:88:3: error: 'XPAR_AXI_BRAM_CTRL_5_CE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_CE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:90:3: error: 'XPAR_AXI_BRAM_CTRL_5_UE_FAILING_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_UE_FAILING_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:92:3: error: 'XPAR_AXI_BRAM_CTRL_5_ECC_STATUS_REGISTERS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_ECC_STATUS_REGISTERS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:93:3: error: 'XPAR_AXI_BRAM_CTRL_5_CE_COUNTER_WIDTH' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_CE_COUNTER_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:94:3: error: 'XPAR_AXI_BRAM_CTRL_5_ECC_ONOFF_REGISTER' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_ECC_ONOFF_REGISTER,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:95:3: error: 'XPAR_AXI_BRAM_CTRL_5_ECC_ONOFF_RESET_VALUE' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_ECC_ONOFF_RESET_VALUE,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:96:3: error: 'XPAR_AXI_BRAM_CTRL_5_WRITE_ACCESS' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_WRITE_ACCESS,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:97:3: error: 'XPAR_AXI_BRAM_CTRL_5_S_AXI_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_S_AXI_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:98:3: error: 'XPAR_AXI_BRAM_CTRL_5_S_AXI_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_S_AXI_HIGHADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:99:3: error: 'XPAR_AXI_BRAM_CTRL_5_S_AXI_CTRL_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_S_AXI_CTRL_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:100:3: error: 'XPAR_AXI_BRAM_CTRL_5_S_AXI_CTRL_HIGHADDR' undeclared here (not in a function)
+   XPAR_AXI_BRAM_CTRL_5_S_AXI_CTRL_HIGHADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_g.c:101:2: warning: missing initializer for field 'EccStatusInterruptPresent' of 'XBram_Config' {aka 'struct <anonymous>'} [-Wmissing-field-initializers]
+  }
+  ^
+In file included from xbram_g.c:37:
+xbram.h:161:6: note: 'EccStatusInterruptPresent' declared here
+  int EccStatusInterruptPresent;    /**< Are ECC status and interrupts
+      ^~~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c: In function 'XBram_LookupConfig':
+xbram_sinit.c:92:27: error: 'XPAR_XBRAM_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XBRAM_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xbram_sinit.c:92:27: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:20: libs] Error 1
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/bram_v4_3/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+xdevcfg_sinit.c: In function 'XDcfg_LookupConfig':
+xdevcfg_sinit.c:81:27: error: 'XPAR_XDCFG_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0U; Index < XPAR_XDCFG_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xdevcfg_sinit.c:81:27: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xdevcfg_sinit.o] Error 1
+xdevcfg_g.c:46:3: error: 'XPAR_PS7_DEV_CFG_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_DEV_CFG_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xdevcfg_g.c:47:3: error: 'XPAR_PS7_DEV_CFG_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_DEV_CFG_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xdevcfg_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/devcfg_v3_5/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+xdmaps_sinit.c: In function 'XDmaPs_LookupConfig':
+xdmaps_sinit.c:91:18: error: 'XPAR_XDMAPS_NUM_INSTANCES' undeclared (first use in this function)
+  for (i = 0; i < XPAR_XDMAPS_NUM_INSTANCES; i++) {
+                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+xdmaps_sinit.c:91:18: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xdmaps_sinit.o] Error 1
+xdmaps_g.c:43:34: error: 'XPAR_XDMAPS_NUM_INSTANCES' undeclared here (not in a function)
+ XDmaPs_Config XDmaPs_ConfigTable[XPAR_XDMAPS_NUM_INSTANCES] =
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+xdmaps_g.c:46:3: error: 'XPAR_PS7_DMA_NS_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_DMA_NS_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xdmaps_g.c:47:3: error: 'XPAR_PS7_DMA_NS_BASEADDR' undeclared here (not in a function); did you mean 'XREG_CP15_CONFIG_BASE_ADDR'?
+   XPAR_PS7_DMA_NS_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XREG_CP15_CONFIG_BASE_ADDR
+xdmaps_g.c:50:3: error: 'XPAR_PS7_DMA_S_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_DMA_S_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xdmaps_g.c:51:3: error: 'XPAR_PS7_DMA_S_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_DMA_S_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xdmaps_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/dmaps_v2_4/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+xemacps_g.c:43:36: error: 'XPAR_XEMACPS_NUM_INSTANCES' undeclared here (not in a function)
+ XEmacPs_Config XEmacPs_ConfigTable[XPAR_XEMACPS_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xemacps_g.c:46:3: error: 'XPAR_PS7_ETHERNET_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_ETHERNET_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xemacps_g.c:47:3: error: 'XPAR_PS7_ETHERNET_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_ETHERNET_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xemacps_g.c:48:3: error: 'XPAR_PS7_ETHERNET_0_IS_CACHE_COHERENT' undeclared here (not in a function)
+   XPAR_PS7_ETHERNET_0_IS_CACHE_COHERENT
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xemacps_g.o] Error 1
+xemacps_sinit.c:60:43: error: 'XPAR_XEMACPS_NUM_INSTANCES' undeclared here (not in a function)
+ extern XEmacPs_Config XEmacPs_ConfigTable[XPAR_XEMACPS_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xemacps_sinit.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/emacps_v3_9/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+xgpiops_sinit.c:66:43: error: 'XPAR_XGPIOPS_NUM_INSTANCES' undeclared here (not in a function)
+ extern XGpioPs_Config XGpioPs_ConfigTable[XPAR_XGPIOPS_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xgpiops_sinit.o] Error 1
+xgpiops_g.c:43:36: error: 'XPAR_XGPIOPS_NUM_INSTANCES' undeclared here (not in a function)
+ XGpioPs_Config XGpioPs_ConfigTable[XPAR_XGPIOPS_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xgpiops_g.c:46:3: error: 'XPAR_PS7_GPIO_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_GPIO_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xgpiops_g.c:47:3: error: 'XPAR_PS7_GPIO_0_BASEADDR' undeclared here (not in a function); did you mean 'XGPIOPS_PS_GPIO_BASEADDR'?
+   XPAR_PS7_GPIO_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XGPIOPS_PS_GPIO_BASEADDR
+make[1]: *** [Makefile:25: xgpiops_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/gpiops_v3_5/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_4/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+xgpio_g.c:43:32: error: 'XPAR_XGPIO_NUM_INSTANCES' undeclared here (not in a function)
+ XGpio_Config XGpio_ConfigTable[XPAR_XGPIO_NUM_INSTANCES] =
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+xgpio_g.c:46:3: error: 'XPAR_AXI_GPIO_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_AXI_GPIO_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xgpio_g.c:47:3: error: 'XPAR_AXI_GPIO_0_BASEADDR' undeclared here (not in a function)
+   XPAR_AXI_GPIO_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xgpio_g.c:48:3: error: 'XPAR_AXI_GPIO_0_INTERRUPT_PRESENT' undeclared here (not in a function)
+   XPAR_AXI_GPIO_0_INTERRUPT_PRESENT,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xgpio_g.c:49:3: error: 'XPAR_AXI_GPIO_0_IS_DUAL' undeclared here (not in a function)
+   XPAR_AXI_GPIO_0_IS_DUAL
+   ^~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xgpio_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/gpio_v4_4/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+xqspips_sinit.c: In function 'XQspiPs_LookupConfig':
+xqspips_sinit.c:88:26: error: 'XPAR_XQSPIPS_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0; Index < XPAR_XQSPIPS_NUM_INSTANCES; Index++) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xqspips_sinit.c:88:26: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xqspips_sinit.o] Error 1
+xqspips_hw.c: In function 'XQspiPs_LinearInit':
+xqspips_hw.c:191:5: error: 'XPAR_XQSPIPS_0_QSPI_MODE' undeclared (first use in this function)
+  if(XPAR_XQSPIPS_0_QSPI_MODE == XQSPIPS_CONNECTION_MODE_SINGLE){
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+xqspips_hw.c:191:5: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xqspips_hw.o] Error 1
+xqspips_g.c:43:36: error: 'XPAR_XQSPIPS_NUM_INSTANCES' undeclared here (not in a function)
+ XQspiPs_Config XQspiPs_ConfigTable[XPAR_XQSPIPS_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xqspips_g.c:46:3: error: 'XPAR_PS7_QSPI_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_QSPI_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xqspips_g.c:47:3: error: 'XPAR_PS7_QSPI_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_XSLCR_0_BASEADDR'?
+   XPAR_PS7_QSPI_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_XSLCR_0_BASEADDR
+xqspips_g.c:48:3: error: 'XPAR_PS7_QSPI_0_QSPI_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_QSPI_0_QSPI_CLK_FREQ_HZ,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xqspips_g.c:49:3: error: 'XPAR_PS7_QSPI_0_QSPI_MODE' undeclared here (not in a function)
+   XPAR_PS7_QSPI_0_QSPI_MODE
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xqspips_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/qspips_v3_6/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_0/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v4_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+xscugic_hw.c:105:43: error: 'XPAR_XSCUGIC_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XSCUGIC_NUM_INT_MASK'?
+ extern XScuGic_Config XScuGic_ConfigTable[XPAR_XSCUGIC_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XSCUGIC_NUM_INT_MASK
+xscugic_hw.c: In function 'LookupConfigByBaseAddress':
+xscugic_hw.c:436:27: error: 'XPAR_SCUGIC_NUM_INSTANCES' undeclared (first use in this function); did you mean 'XSCUGIC_NUM_INT_MASK'?
+  for (Index = 0U; Index < XPAR_SCUGIC_NUM_INSTANCES; Index++) {
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                           XSCUGIC_NUM_INT_MASK
+xscugic_hw.c:436:27: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xscugic_hw.o] Error 1
+xscugic_g.c:43:36: error: 'XPAR_XSCUGIC_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XSCUGIC_NUM_INT_MASK'?
+ XScuGic_Config XScuGic_ConfigTable[XPAR_XSCUGIC_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XSCUGIC_NUM_INT_MASK
+xscugic_g.c:46:3: error: 'XPAR_PS7_SCUGIC_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_SCUGIC_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+xscugic_g.c:47:3: error: 'XPAR_PS7_SCUGIC_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_SCUGIC_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xscugic_g.c:48:3: error: 'XPAR_PS7_SCUGIC_0_DIST_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_SCUGIC_0_DIST_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xscugic_g.o] Error 1
+xscugic.c:145:20: error: 'XPAR_CPU_ID' undeclared here (not in a function)
+ static u32 CpuId = XPAR_CPU_ID; /**< CPU Core identifier */
+                    ^~~~~~~~~~~
+In file included from xscugic.c:133:
+xscugic.c: In function 'XScuGic_CfgInitialize':
+xscugic.c:434:31: error: 'XPS_EFUSE_BASEADDR' undeclared (first use in this function)
+   Xil_AssertNonvoid((Xil_In32(XPS_EFUSE_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+xscugic.c:434:31: note: each undeclared identifier is reported only once for each function it appears in
+   Xil_AssertNonvoid((Xil_In32(XPS_EFUSE_BASEADDR
+                               ^~~~~~~~~~~~~~~~~~
+../../../include/xil_assert.h:128:9: note: in definition of macro 'Xil_AssertNonvoid'
+     if (Expression) {                              \
+         ^~~~~~~~~~
+make[1]: *** [Makefile:25: xscugic.o] Error 1
+xscugic_sinit.c:69:43: error: 'XPAR_SCUGIC_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XSCUGIC_NUM_INT_MASK'?
+ extern XScuGic_Config XScuGic_ConfigTable[XPAR_SCUGIC_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XSCUGIC_NUM_INT_MASK
+make[1]: *** [Makefile:25: xscugic_sinit.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/scugic_v4_0/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+xscutimer_sinit.c:61:47: error: 'XPAR_XSCUTIMER_NUM_INSTANCES' undeclared here (not in a function)
+ extern XScuTimer_Config XScuTimer_ConfigTable[XPAR_XSCUTIMER_NUM_INSTANCES];
+                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xscutimer_sinit.o] Error 1
+xscutimer_g.c:43:40: error: 'XPAR_XSCUTIMER_NUM_INSTANCES' undeclared here (not in a function)
+ XScuTimer_Config XScuTimer_ConfigTable[XPAR_XSCUTIMER_NUM_INSTANCES] =
+                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xscutimer_g.c:46:3: error: 'XPAR_PS7_SCUTIMER_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_SCUTIMER_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xscutimer_g.c:47:3: error: 'XPAR_PS7_SCUTIMER_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_SCUTIMER_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xscutimer_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/scutimer_v2_1/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+xscuwdt_g.c:43:36: error: 'XPAR_XSCUWDT_NUM_INSTANCES' undeclared here (not in a function)
+ XScuWdt_Config XScuWdt_ConfigTable[XPAR_XSCUWDT_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+xscuwdt_g.c:46:3: error: 'XPAR_PS7_SCUWDT_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_SCUWDT_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+xscuwdt_g.c:47:3: error: 'XPAR_PS7_SCUWDT_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_SCUWDT_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xscuwdt_g.o] Error 1
+xscuwdt_sinit.c:63:43: error: 'XPAR_XSCUWDT_NUM_INSTANCES' undeclared here (not in a function)
+ extern XScuWdt_Config XScuWdt_ConfigTable[XPAR_XSCUWDT_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xscuwdt_sinit.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/scuwdt_v2_1/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+xsdps_g.c:43:32: error: 'XPAR_XSDPS_NUM_INSTANCES' undeclared here (not in a function)
+ XSdPs_Config XSdPs_ConfigTable[XPAR_XSDPS_NUM_INSTANCES] =
+                                ^~~~~~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:46:3: error: 'XPAR_PS7_SD_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_SD_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:47:3: error: 'XPAR_PS7_SD_0_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_CSU_BASEADDR'?
+   XPAR_PS7_SD_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~
+   XPAR_CSU_BASEADDR
+xsdps_g.c:48:3: error: 'XPAR_PS7_SD_0_SDIO_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_SD_0_SDIO_CLK_FREQ_HZ,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:49:3: error: 'XPAR_PS7_SD_0_HAS_CD' undeclared here (not in a function)
+   XPAR_PS7_SD_0_HAS_CD,
+   ^~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:50:3: error: 'XPAR_PS7_SD_0_HAS_WP' undeclared here (not in a function)
+   XPAR_PS7_SD_0_HAS_WP,
+   ^~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:51:3: error: 'XPAR_PS7_SD_0_BUS_WIDTH' undeclared here (not in a function); did you mean 'XSDPS_HC_EXT_BUS_WIDTH'?
+   XPAR_PS7_SD_0_BUS_WIDTH,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XSDPS_HC_EXT_BUS_WIDTH
+xsdps_g.c:52:3: error: 'XPAR_PS7_SD_0_MIO_BANK' undeclared here (not in a function)
+   XPAR_PS7_SD_0_MIO_BANK,
+   ^~~~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:53:3: error: 'XPAR_PS7_SD_0_HAS_EMIO' undeclared here (not in a function)
+   XPAR_PS7_SD_0_HAS_EMIO,
+   ^~~~~~~~~~~~~~~~~~~~~~
+xsdps_g.c:54:3: error: 'XPAR_PS7_SD_0_IS_CACHE_COHERENT' undeclared here (not in a function)
+   XPAR_PS7_SD_0_IS_CACHE_COHERENT
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xsdps_g.o] Error 1
+xsdps_sinit.c:64:39: error: 'XPAR_XSDPS_NUM_INSTANCES' undeclared here (not in a function)
+ extern XSdPs_Config XSdPs_ConfigTable[XPAR_XSDPS_NUM_INSTANCES];
+                                       ^~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xsdps_sinit.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/sdps_v3_7/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_0/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v7_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+usleep.c: In function 'usleep_A9':
+usleep.c:71:30: error: 'XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ' undeclared (first use in this function)
+ #define COUNTS_PER_USECOND  (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / (2U*1000000U))
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+usleep.c:71:30: note: in definition of macro 'COUNTS_PER_USECOND'
+ #define COUNTS_PER_USECOND  (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / (2U*1000000U))
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+usleep.c:71:30: note: each undeclared identifier is reported only once for each function it appears in
+ #define COUNTS_PER_USECOND  (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / (2U*1000000U))
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+usleep.c:71:30: note: in definition of macro 'COUNTS_PER_USECOND'
+ #define COUNTS_PER_USECOND  (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ / (2U*1000000U))
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from sleep.c:53:
+sleep.c: In function 'sleep_A9':
+xtime_l.h:82:37: error: 'XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ' undeclared (first use in this function)
+ #define COUNTS_PER_SECOND          (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ /2)
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.h:82:37: note: in definition of macro 'COUNTS_PER_SECOND'
+ #define COUNTS_PER_SECOND          (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ /2)
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.h:82:37: note: each undeclared identifier is reported only once for each function it appears in
+ #define COUNTS_PER_SECOND          (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ /2)
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.h:82:37: note: in definition of macro 'COUNTS_PER_SECOND'
+ #define COUNTS_PER_SECOND          (XPAR_CPU_CORTEXA9_CORE_CLOCK_FREQ_HZ /2)
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+inbyte.c: In function 'inbyte':
+inbyte.c:13:27: error: 'STDIN_BASEADDRESS' undeclared (first use in this function)
+   return XUartPs_RecvByte(STDIN_BASEADDRESS);
+                           ^~~~~~~~~~~~~~~~~
+inbyte.c:13:27: note: each undeclared identifier is reported only once for each function it appears in
+inbyte.c:14:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+xil_cache.c: In function 'Xil_L2WriteDebugCtrl':
+xil_cache.c:144:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_DEBUG_CTRL_OFFSET, Value);
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+xil_cache.c:144:12: note: each undeclared identifier is reported only once for each function it appears in
+xil_cache.c: In function 'Xil_L2CacheSync':
+xil_cache.c:167:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_CACHE_SYNC_OFFSET, 0x0U);
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_DCacheInvalidateRange':
+xil_cache.c:336:46: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  volatile u32 *L2CCOffset = (volatile u32 *)(XPS_L2CC_BASEADDR +
+                                              ^~~~~~~~~~~~~~~~~
+                                              XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_DCacheFlushRange':
+xil_cache.c:481:46: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  volatile u32 *L2CCOffset = (volatile u32 *)(XPS_L2CC_BASEADDR +
+                                              ^~~~~~~~~~~~~~~~~
+                                              XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_ICacheInvalidateRange':
+xil_cache.c:654:46: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  volatile u32 *L2CCOffset = (volatile u32 *)(XPS_L2CC_BASEADDR +
+                                              ^~~~~~~~~~~~~~~~~
+                                              XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheEnable':
+xil_cache.c:1306:21: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  L2CCReg = Xil_In32(XPS_L2CC_BASEADDR + XPS_L2CC_CNTRL_OFFSET);
+                     ^~~~~~~~~~~~~~~~~
+                     XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheDisable':
+xil_cache.c:1356:21: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  L2CCReg = Xil_In32(XPS_L2CC_BASEADDR + XPS_L2CC_CNTRL_OFFSET);
+                     ^~~~~~~~~~~~~~~~~
+                     XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheInvalidate':
+xil_cache.c:1398:21: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  L2CCReg = Xil_In32(XPS_L2CC_BASEADDR + XPS_L2CC_CNTRL_OFFSET);
+                     ^~~~~~~~~~~~~~~~~
+                     XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheInvalidateLine':
+xil_cache.c:1440:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_CACHE_INVLD_PA_OFFSET, (u32)adr);
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheInvalidateRange':
+xil_cache.c:1466:46: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  volatile u32 *L2CCOffset = (volatile u32 *)(XPS_L2CC_BASEADDR +
+                                              ^~~~~~~~~~~~~~~~~
+                                              XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheFlush':
+xil_cache.c:1519:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_CACHE_INV_CLN_WAY_OFFSET,
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheFlushLine':
+xil_cache.c:1555:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_CACHE_CLEAN_PA_OFFSET, adr);
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheFlushRange':
+xil_cache.c:1585:46: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  volatile u32 *L2CCOffset = (volatile u32 *)(XPS_L2CC_BASEADDR +
+                                              ^~~~~~~~~~~~~~~~~
+                                              XPS_L2CC_IAR_OFFSET
+xil_cache.c: In function 'Xil_L2CacheStoreLine':
+xil_cache.c:1633:12: error: 'XPS_L2CC_BASEADDR' undeclared (first use in this function); did you mean 'XPS_L2CC_IAR_OFFSET'?
+  Xil_Out32(XPS_L2CC_BASEADDR + XPS_L2CC_CACHE_CLEAN_PA_OFFSET, adr);
+            ^~~~~~~~~~~~~~~~~
+            XPS_L2CC_IAR_OFFSET
+outbyte.c: In function 'outbyte':
+outbyte.c:14:20: error: 'STDOUT_BASEADDRESS' undeclared (first use in this function)
+   XUartPs_SendByte(STDOUT_BASEADDRESS, c);
+                    ^~~~~~~~~~~~~~~~~~
+outbyte.c:14:20: note: each undeclared identifier is reported only once for each function it appears in
+In file included from xtime_l.c:49:
+xtime_l.c: In function 'XTime_SetTime':
+xtime_l.h:73:43: error: 'XPAR_GLOBAL_TMR_BASEADDR' undeclared (first use in this function); did you mean 'GLOBAL_TMR_BASEADDR'?
+ #define GLOBAL_TMR_BASEADDR               XPAR_GLOBAL_TMR_BASEADDR
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.c:82:17: note: in expansion of macro 'GLOBAL_TMR_BASEADDR'
+  Xil_Out32((u32)GLOBAL_TMR_BASEADDR + (u32)GTIMER_CONTROL_OFFSET, (u32)0x0);
+                 ^~~~~~~~~~~~~~~~~~~
+xtime_l.h:73:43: note: each undeclared identifier is reported only once for each function it appears in
+ #define GLOBAL_TMR_BASEADDR               XPAR_GLOBAL_TMR_BASEADDR
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.c:82:17: note: in expansion of macro 'GLOBAL_TMR_BASEADDR'
+  Xil_Out32((u32)GLOBAL_TMR_BASEADDR + (u32)GTIMER_CONTROL_OFFSET, (u32)0x0);
+                 ^~~~~~~~~~~~~~~~~~~
+xtime_l.c: In function 'XTime_GetTime':
+xtime_l.h:73:43: error: 'XPAR_GLOBAL_TMR_BASEADDR' undeclared (first use in this function); did you mean 'GLOBAL_TMR_BASEADDR'?
+ #define GLOBAL_TMR_BASEADDR               XPAR_GLOBAL_TMR_BASEADDR
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~
+xtime_l.c:113:19: note: in expansion of macro 'GLOBAL_TMR_BASEADDR'
+   high = Xil_In32(GLOBAL_TMR_BASEADDR + GTIMER_COUNTER_UPPER_OFFSET);
+                   ^~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:65: standalone_libs] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/standalone_v7_0/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+xttcps_sinit.c:62:41: error: 'XPAR_XTTCPS_NUM_INSTANCES' undeclared here (not in a function)
+ extern XTtcPs_Config XTtcPs_ConfigTable[XPAR_XTTCPS_NUM_INSTANCES];
+                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xttcps_sinit.o] Error 1
+xttcps_g.c:46:3: error: 'XPAR_PS7_TTC_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_TTC_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xttcps_g.c:47:3: error: 'XPAR_PS7_TTC_0_BASEADDR' undeclared here (not in a function); did you mean 'XREG_CP15_VEC_BASE_ADDR'?
+   XPAR_PS7_TTC_0_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XREG_CP15_VEC_BASE_ADDR
+xttcps_g.c:48:3: error: 'XPAR_PS7_TTC_0_TTC_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_TTC_0_TTC_CLK_FREQ_HZ
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xttcps_g.c:51:3: error: 'XPAR_PS7_TTC_1_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_TTC_1_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xttcps_g.c:52:3: error: 'XPAR_PS7_TTC_1_BASEADDR' undeclared here (not in a function); did you mean 'XREG_CP15_VEC_BASE_ADDR'?
+   XPAR_PS7_TTC_1_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XREG_CP15_VEC_BASE_ADDR
+xttcps_g.c:53:3: error: 'XPAR_PS7_TTC_1_TTC_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_TTC_1_TTC_CLK_FREQ_HZ
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xttcps_g.c:56:3: error: 'XPAR_PS7_TTC_2_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_TTC_2_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xttcps_g.c:57:3: error: 'XPAR_PS7_TTC_2_BASEADDR' undeclared here (not in a function); did you mean 'XREG_CP15_VEC_BASE_ADDR'?
+   XPAR_PS7_TTC_2_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~
+   XREG_CP15_VEC_BASE_ADDR
+xttcps_g.c:58:3: error: 'XPAR_PS7_TTC_2_TTC_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_TTC_2_TTC_CLK_FREQ_HZ
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xttcps_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/ttcps_v3_9/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+xuartps_sinit.c:62:43: error: 'XPAR_XUARTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XUARTPS_MIN_RATE'?
+ extern XUartPs_Config XUartPs_ConfigTable[XPAR_XUARTPS_NUM_INSTANCES];
+                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                           XUARTPS_MIN_RATE
+make[1]: *** [Makefile:25: xuartps_sinit.o] Error 1
+xuartps_g.c:43:36: error: 'XPAR_XUARTPS_NUM_INSTANCES' undeclared here (not in a function); did you mean 'XUARTPS_MIN_RATE'?
+ XUartPs_Config XUartPs_ConfigTable[XPAR_XUARTPS_NUM_INSTANCES] =
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    XUARTPS_MIN_RATE
+xuartps_g.c:46:3: error: 'XPAR_PS7_UART_1_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_UART_1_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xuartps_g.c:47:3: error: 'XPAR_PS7_UART_1_BASEADDR' undeclared here (not in a function); did you mean 'XPAR_CSU_BASEADDR'?
+   XPAR_PS7_UART_1_BASEADDR,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XPAR_CSU_BASEADDR
+xuartps_g.c:48:3: error: 'XPAR_PS7_UART_1_UART_CLK_FREQ_HZ' undeclared here (not in a function)
+   XPAR_PS7_UART_1_UART_CLK_FREQ_HZ,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xuartps_g.c:49:3: error: 'XPAR_PS7_UART_1_HAS_MODEM' undeclared here (not in a function)
+   XPAR_PS7_UART_1_HAS_MODEM
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xuartps_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/uartps_v3_7/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+xusbps_g.c:43:34: error: 'XPAR_XUSBPS_NUM_INSTANCES' undeclared here (not in a function)
+ XUsbPs_Config XUsbPs_ConfigTable[XPAR_XUSBPS_NUM_INSTANCES] =
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+xusbps_g.c:46:3: error: 'XPAR_PS7_USB_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_USB_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+xusbps_g.c:47:3: error: 'XPAR_PS7_USB_0_BASEADDR' undeclared here (not in a function)
+   XPAR_PS7_USB_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~
+make[1]: *** [Makefile:25: xusbps_g.o] Error 1
+xusbps_sinit.c: In function 'XUsbPs_LookupConfig':
+xusbps_sinit.c:86:26: error: 'XPAR_XUSBPS_NUM_INSTANCES' undeclared (first use in this function)
+  for (Index = 0; Index < XPAR_XUSBPS_NUM_INSTANCES; Index++) {
+                          ^~~~~~~~~~~~~~~~~~~~~~~~~
+xusbps_sinit.c:86:26: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [Makefile:25: xusbps_sinit.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/usbps_v2_4/src/make.libs] Error 2
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+In file included from xadcps.h:195,
+                 from xadcps.c:63:
+xadcps.c: In function 'XAdcPs_CfgInitialize':
+xadcps.c:121:18: error: 'XPAR_XDCFG_0_BASEADDR' undeclared (first use in this function)
+  XAdcPs_WriteReg(XPAR_XDCFG_0_BASEADDR,
+                  ^~~~~~~~~~~~~~~~~~~~~
+xadcps_hw.h:463:15: note: in definition of macro 'XAdcPs_WriteReg'
+   (Xil_Out32((BaseAddress) + (RegOffset), (Data)))
+               ^~~~~~~~~~~
+xadcps.c:121:18: note: each undeclared identifier is reported only once for each function it appears in
+  XAdcPs_WriteReg(XPAR_XDCFG_0_BASEADDR,
+                  ^~~~~~~~~~~~~~~~~~~~~
+xadcps_hw.h:463:15: note: in definition of macro 'XAdcPs_WriteReg'
+   (Xil_Out32((BaseAddress) + (RegOffset), (Data)))
+               ^~~~~~~~~~~
+make[1]: *** [Makefile:25: xadcps.o] Error 1
+xadcps_g.c:43:34: error: 'XPAR_XADCPS_NUM_INSTANCES' undeclared here (not in a function)
+ XAdcPs_Config XAdcPs_ConfigTable[XPAR_XADCPS_NUM_INSTANCES] =
+                                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+xadcps_g.c:46:3: error: 'XPAR_PS7_XADC_0_DEVICE_ID' undeclared here (not in a function)
+   XPAR_PS7_XADC_0_DEVICE_ID,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~
+xadcps_g.c:47:3: error: 'XPAR_PS7_XADC_0_BASEADDR' undeclared here (not in a function); did you mean 'XREG_CP15_VEC_BASE_ADDR'?
+   XPAR_PS7_XADC_0_BASEADDR
+   ^~~~~~~~~~~~~~~~~~~~~~~~
+   XREG_CP15_VEC_BASE_ADDR
+make[1]: *** [Makefile:25: xadcps_g.o] Error 1
+make[1]: Target 'libs' not remade because of errors.
+make: *** [Makefile:30: ps7_cortexa9_0/libsrc/xadcps_v2_3/src/make.libs] Error 2
+make: Target 'all' not remade because of errors.
+
+00:17:16 Build Finished (took 46s.549ms)
+

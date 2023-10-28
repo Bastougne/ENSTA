@@ -1,0 +1,5 @@
+main()
+begin
+    print (1, "Foobar", "\n") ;
+    print (4 * 10 + 5, "\n") ;
+end

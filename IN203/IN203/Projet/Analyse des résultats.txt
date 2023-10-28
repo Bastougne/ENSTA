@@ -1,0 +1,55 @@
+Se placer dans le dossier source et lancer "make clean; make all"
+
+Remarque : les valeurs indiquées ont été déterminées avec 400 000 individus
+
+
+2.1) Mesure du temps
+
+Lancer "./simulation_seq.exe"
+
+On constate que le programme passe en moyenne 95ms dans la simulation et 55ms dans l'affichage par pas de temps, soit 150ms par pas de temps en tout.
+L'affichage représente 42% du temps d'exécution, on va donc chercher à paralléliser l'affichage et la simulation afin de réduire le temps total de calcul.
+
+
+2.2) Parallélisation aﬀichage contre simulation
+
+Lancer "mpiexec -n 2 ./simulation_sync_affiche_mpi.exe"
+
+Avec une parallélisation en 2 processus, le processus de calcul de la simulation et celui d'affichage passent chacun en moyenne 92ms par pas de temps, soit
+92ms par pas de temps en tout. On a donc une accélération de 1.6 pour cette parallélisation.
+Il est logique que les deux processus prennent autant de temps par pas de temps car l'envoi et la reception de message sont bloquants dans cette version.
+
+Remarque : perte de la fonctionnalité de fermeture, la réduction de quitting en début de boucle posait problème. Il faut utiliser Crtl+C dans le terminal.
+
+
+2.3) Parallélisation aﬀichage asynchrone contre simulation
+
+Lancer "mpiexec -n 2 ./simulation_async_affiche_mpi.exe"
+
+Avec l'affichage asynchrone, la simulation n'est plus bloquée par la vitesse d'affichage mais par celle de calcul de la simulation donc le programme s'exécute
+plus rapidement. Cependant, la vitesse d'affichage étant suffisamment faible, cette optimisation ne se remarque pas vraiment ici (voir 2.1, elle se remarquait plus pour
+un plus petit nombre d'individus).
+
+2.4) Parallélisation OpenMP
+
+Lancer "mpiexec -n 2 ./simulation_async_omp.exe"
+
+En parallélisant la simulation avec OpenMP, on constate que le temps d'exécution par pas de temps diminue (de 92ms à 62ms), ce qui est cohérent car la
+parallélisation omp de la simulation provoque une diminution du temps de calcul, et on a vu dans la partie précédente que c'était ce temps de calcul qui
+limitait les performances de notre programme.
+
+
+2.5) Parallélisation MPI de la simulation
+
+Dans l'idée, il faudrait partager la population en plusieurs sous populations à faire étudier par les processus 1 à numtasks (dans simulation et dans
+majStatistique), puis effectuer un gather pour que les données de la population globale se trouve dans le processus 1. Pour cela, on utilise Comm_split
+pour créer un nouveau comminucateur entre les processus de calcul de la simulation. Une fois le gather effectué, il ne reste alors plus qu'à envoyer les
+données contenues dans le processus 1 au processus 0 comme en 2.3.
+
+Cependant, la mise en place du gather était trop technique et je n'ai pas eu le temps d'y parvenir.
+
+En lançant toutefois la version non terminée, on remarque que le temps de calcul diminue de façon quasi linéaire avec le nombre de processus - 1.
+
+2.5.1) Parallélisation finale
+
+Il suffit de rajouter des #pragma omp parallel for dans le code du 2.5 aux endroits où ils étaient dans la version 2.3
